@@ -1,0 +1,13 @@
+# Auto-detect text files and handle line endings automatically
+* text=auto
+
+# Ensure consistent line endings in all environments
+*.cs text diff=csharp
+*.csproj text
+*.sln text
+*.json text
+*.xml text
+*.yml text
+*.yaml text
+*.md text
+
