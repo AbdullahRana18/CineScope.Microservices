@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\ASPNET\\PNDCProject\\PNDCProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CAB94DDD-FACC-9B5C-03E9-F70440F1A6FA}|AuthService\\AuthService.csproj|d:\\aspnet\\pndcproject\\pndcproject\\authservice\\helpers\\cryptohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAB94DDD-FACC-9B5C-03E9-F70440F1A6FA}|AuthService\\AuthService.csproj|solutionrelative:authservice\\helpers\\cryptohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAB94DDD-FACC-9B5C-03E9-F70440F1A6FA}|AuthService\\AuthService.csproj|d:\\aspnet\\pndcproject\\pndcproject\\authservice\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAB94DDD-FACC-9B5C-03E9-F70440F1A6FA}|AuthService\\AuthService.csproj|solutionrelative:authservice\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0D394DD1-2FDD-B6EF-DB1B-B30AEA7225B4}|..\\PaymentService\\PaymentService\\PaymentService.csproj|d:\\aspnet\\pndcproject\\paymentservice\\paymentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -10,9 +18,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D394DD1-2FDD-B6EF-DB1B-B30AEA7225B4}|..\\PaymentService\\PaymentService\\PaymentService.csproj|d:\\aspnet\\pndcproject\\paymentservice\\paymentservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93088BB0-B2A1-387F-CB58-9A1D3EB22F9C}|..\\MovieService\\MovieService\\MovieService.csproj|d:\\aspnet\\pndcproject\\movieservice\\movieservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{93088BB0-B2A1-387F-CB58-9A1D3EB22F9C}|..\\MovieService\\MovieService\\MovieService.csproj|d:\\aspnet\\pndcproject\\movieservice\\movieservice\\movieservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
@@ -53,6 +58,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CryptoHelper.cs",
+              "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\Helpers\\CryptoHelper.cs",
+              "RelativeDocumentMoniker": "AuthService\\Helpers\\CryptoHelper.cs",
+              "ToolTip": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\Helpers\\CryptoHelper.cs",
+              "RelativeToolTip": "AuthService\\Helpers\\CryptoHelper.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAcwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T20:35:17.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\Models\\User.cs",
+              "RelativeDocumentMoniker": "AuthService\\Models\\User.cs",
+              "ToolTip": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\Models\\User.cs",
+              "RelativeToolTip": "AuthService\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T20:24:37.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\PaymentService\\PaymentService\\Program.cs",
               "RelativeDocumentMoniker": "..\\PaymentService\\PaymentService\\Program.cs",
@@ -66,32 +97,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Program.cs",
-              "RelativeDocumentMoniker": "..\\MovieService\\MovieService\\Program.cs",
-              "ToolTip": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Program.cs",
-              "RelativeToolTip": "..\\MovieService\\MovieService\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T20:01:19.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PaymentService",
+              "Title": "PaymentService.csproj",
               "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\PaymentService\\PaymentService\\PaymentService.csproj",
               "RelativeDocumentMoniker": "..\\PaymentService\\PaymentService\\PaymentService.csproj",
               "ToolTip": "D:\\ASPNET\\PNDCProject\\PaymentService\\PaymentService\\PaymentService.csproj",
               "RelativeToolTip": "..\\PaymentService\\PaymentService\\PaymentService.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-27T19:49:54.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T19:49:54.764Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "..\\MovieService\\MovieService\\Properties\\launchSettings.json",
@@ -99,12 +116,11 @@
               "RelativeToolTip": "..\\MovieService\\MovieService\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAEAAAAAAAAAAAAkwA8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-27T19:50:41.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T19:50:41.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\PaymentService\\PaymentService\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "..\\PaymentService\\PaymentService\\Properties\\launchSettings.json",
@@ -112,12 +128,11 @@
               "RelativeToolTip": "..\\PaymentService\\PaymentService\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-27T19:50:49.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T19:50:49.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\Program.cs",
               "RelativeDocumentMoniker": "AuthService\\Program.cs",
@@ -125,25 +140,23 @@
               "RelativeToolTip": "AuthService\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T19:56:53.906Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T19:56:53.906Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MovieService",
+              "DocumentIndex": 5,
+              "Title": "MovieService.csproj",
               "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\MovieService.csproj",
               "RelativeDocumentMoniker": "..\\MovieService\\MovieService\\MovieService.csproj",
               "ToolTip": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\MovieService.csproj",
               "RelativeToolTip": "..\\MovieService\\MovieService\\MovieService.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-27T19:49:54.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T19:49:54.796Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "AuthService\\Properties\\launchSettings.json",
@@ -151,20 +164,7 @@
               "RelativeToolTip": "AuthService\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAEAAAAAAAAAAAAkwAkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-27T19:50:24.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AuthService",
-              "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\AuthService.csproj",
-              "RelativeDocumentMoniker": "AuthService\\AuthService.csproj",
-              "ToolTip": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\AuthService.csproj",
-              "RelativeToolTip": "AuthService\\AuthService.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-27T19:50:02.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T19:50:24.548Z"
             },
             {
               "$type": "Document",
@@ -174,10 +174,20 @@
               "RelativeDocumentMoniker": "AuthService\\AuthService.csproj",
               "ToolTip": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\AuthService.csproj",
               "RelativeToolTip": "AuthService\\AuthService.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-27T19:50:02.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthService.csproj",
+              "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\AuthService.csproj",
+              "RelativeDocumentMoniker": "AuthService\\AuthService.csproj",
+              "ToolTip": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\AuthService.csproj",
+              "RelativeToolTip": "AuthService\\AuthService.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-27T19:49:54.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T19:49:54.311Z"
             }
           ]
         }
