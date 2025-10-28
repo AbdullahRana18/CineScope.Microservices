@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "..\\MovieService\\MovieService\\MovieService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\PaymentService\\PaymentService\\PaymentService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "AuthService\\AuthService.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

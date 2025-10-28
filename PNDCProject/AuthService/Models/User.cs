@@ -3,10 +3,15 @@
     public class User
     {
         public int Id { get; set; }
-        public string Username { get; set; }
-        public string Email { get; set; }
-        public string PasswordIV { get; set; } // AES IV for encryption
-        public string PasswordHash { get; set; } // Encrypted password
-        public string Role { get; set; }
+
+        // User input fields
+        public string Username { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string PasswordHash { get; set; } = string.Empty;
+
+        // These are generated automatically during registration
+        public string? PasswordIV { get; set; }
+
+        public string Role { get; set; } = "User";
     }
 }
