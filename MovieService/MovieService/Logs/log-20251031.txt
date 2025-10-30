@@ -1,0 +1,198 @@
+2025-10-31 01:53:51.784 +05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-31 01:53:51.909 +05:00 [DBG] Hosting starting
+2025-10-31 01:53:51.947 +05:00 [INF] CacheWarmupWorker started
+2025-10-31 01:53:51.964 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-10-31 01:53:51.968 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-10-31 01:53:52.032 +05:00 [DBG] Middleware loaded
+2025-10-31 01:53:52.044 +05:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16509 B).
+2025-10-31 01:53:52.048 +05:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-10-31 01:53:52.097 +05:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-10-31 01:53:52.100 +05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-31 01:53:52.101 +05:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-10-31 01:53:52.167 +05:00 [INF] Now listening on: https://localhost:7288
+2025-10-31 01:53:52.169 +05:00 [INF] Now listening on: http://localhost:5198
+2025-10-31 01:53:52.170 +05:00 [DBG] Loaded hosting startup assembly MovieService
+2025-10-31 01:53:52.171 +05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-31 01:53:52.172 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-10-31 01:53:52.173 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-31 01:53:52.182 +05:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-10-31 01:53:52.184 +05:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-10-31 01:53:52.234 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-31 01:53:52.236 +05:00 [INF] Hosting environment: Development
+2025-10-31 01:53:52.237 +05:00 [INF] Content root path: D:\ASPNET\PNDCProject\MovieService\MovieService
+2025-10-31 01:53:52.238 +05:00 [DBG] Hosting started
+2025-10-31 01:53:52.497 +05:00 [DBG] Connection id "0HNGNUPNG3EE8" accepted.
+2025-10-31 01:53:52.497 +05:00 [DBG] Connection id "0HNGNUPNG3EE9" accepted.
+2025-10-31 01:53:52.498 +05:00 [DBG] Connection id "0HNGNUPNG3EE8" started.
+2025-10-31 01:53:52.499 +05:00 [DBG] Connection id "0HNGNUPNG3EE9" started.
+2025-10-31 01:53:52.512 +05:00 [DBG] Connection id "0HNGNUPNG3EE8" received FIN.
+2025-10-31 01:53:52.512 +05:00 [DBG] Connection id "0HNGNUPNG3EE9" received FIN.
+2025-10-31 01:53:52.517 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-10-31 01:53:52.517 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-10-31 01:53:52.531 +05:00 [DBG] Connection id "0HNGNUPNG3EE9" stopped.
+2025-10-31 01:53:52.531 +05:00 [DBG] Connection id "0HNGNUPNG3EE8" stopped.
+2025-10-31 01:53:52.534 +05:00 [DBG] Connection id "0HNGNUPNG3EE9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-31 01:53:52.534 +05:00 [DBG] Connection id "0HNGNUPNG3EE8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-31 01:53:52.673 +05:00 [DBG] Connection id "0HNGNUPNG3EEA" accepted.
+2025-10-31 01:53:52.676 +05:00 [DBG] Connection id "0HNGNUPNG3EEA" started.
+2025-10-31 01:53:52.717 +05:00 [DBG] Connection 0HNGNUPNG3EEA established using the following protocol: "Tls13"
+2025-10-31 01:53:52.764 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/index.html - null null
+2025-10-31 01:53:52.828 +05:00 [DBG] No candidates found for the request path '/index.html'
+2025-10-31 01:53:52.830 +05:00 [DBG] Request did not match any endpoints
+2025-10-31 01:53:52.844 +05:00 [INF] HTTP GET /index.html responded 404 in 2.2091 ms
+2025-10-31 01:53:52.859 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/index.html - 404 null null 96.9214ms
+2025-10-31 01:53:52.873 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7288/index.html, Response status code: 404
+2025-10-31 01:53:53.508 +05:00 [INF] Received HTTP response headers after 1536.2003ms - 200
+2025-10-31 01:53:53.511 +05:00 [INF] End processing HTTP request after 1549.3859ms - 200
+2025-10-31 01:53:53.530 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-10-31 01:53:53.531 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-10-31 01:53:53.737 +05:00 [INF] Received HTTP response headers after 204.8312ms - 200
+2025-10-31 01:53:53.739 +05:00 [INF] End processing HTTP request after 209.1955ms - 200
+2025-10-31 01:53:53.741 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-10-31 01:53:53.743 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-10-31 01:53:53.870 +05:00 [INF] Received HTTP response headers after 126.1608ms - 200
+2025-10-31 01:53:53.872 +05:00 [INF] End processing HTTP request after 130.3595ms - 200
+2025-10-31 01:54:16.350 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/health - null null
+2025-10-31 01:54:16.368 +05:00 [DBG] 1 candidate(s) found for the request path '/health'
+2025-10-31 01:54:16.371 +05:00 [DBG] Request matched endpoint 'Health checks'
+2025-10-31 01:54:16.377 +05:00 [INF] Executing endpoint 'Health checks'
+2025-10-31 01:54:16.383 +05:00 [DBG] Running health checks
+2025-10-31 01:54:16.390 +05:00 [DBG] Health check processing with combined status "Healthy" completed after 3.491ms
+2025-10-31 01:54:16.399 +05:00 [INF] Executed endpoint 'Health checks'
+2025-10-31 01:54:16.401 +05:00 [INF] HTTP GET /health responded 200 in 25.2432 ms
+2025-10-31 01:54:16.404 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/health - 200 null text/plain 53.3739ms
+2025-10-31 01:54:16.486 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/favicon.ico - null null
+2025-10-31 01:54:16.491 +05:00 [DBG] No candidates found for the request path '/favicon.ico'
+2025-10-31 01:54:16.492 +05:00 [DBG] Request did not match any endpoints
+2025-10-31 01:54:16.494 +05:00 [INF] HTTP GET /favicon.ico responded 404 in 0.0818 ms
+2025-10-31 01:54:16.497 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/favicon.ico - 404 0 null 10.4428ms
+2025-10-31 01:54:16.501 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7288/favicon.ico, Response status code: 404
+2025-10-31 01:55:51.974 +05:00 [DBG] HttpMessageHandler expired after 120000ms for client 'tmdb'
+2025-10-31 01:56:01.987 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 01:56:01.991 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0193ms - processed: 0 items - remaining: 1 items
+2025-10-31 01:56:11.999 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 01:56:12.002 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0057ms - processed: 0 items - remaining: 1 items
+2025-10-31 01:56:22.016 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 01:56:22.018 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0063ms - processed: 0 items - remaining: 1 items
+2025-10-31 01:56:28.493 +05:00 [DBG] Connection id "0HNGNUPNG3EEA" is closing.
+2025-10-31 01:56:28.497 +05:00 [DBG] Connection id "0HNGNUPNG3EEA" is closed. The last processed stream ID was 5.
+2025-10-31 01:56:28.500 +05:00 [DBG] Connection id "0HNGNUPNG3EEA" received FIN.
+2025-10-31 01:56:28.501 +05:00 [DBG] The connection queue processing loop for 0HNGNUPNG3EEA completed.
+2025-10-31 01:56:28.501 +05:00 [DBG] Connection id "0HNGNUPNG3EEA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-31 01:56:28.507 +05:00 [DBG] Connection id "0HNGNUPNG3EEA" stopped.
+2025-10-31 01:56:32.030 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 01:56:32.032 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0201ms - processed: 0 items - remaining: 1 items
+2025-10-31 01:56:42.047 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 01:56:42.049 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.157ms - processed: 0 items - remaining: 1 items
+2025-10-31 01:56:52.061 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 01:56:52.062 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0047ms - processed: 0 items - remaining: 1 items
+2025-10-31 01:57:02.074 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 01:57:02.076 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0048ms - processed: 0 items - remaining: 1 items
+2025-10-31 01:57:12.087 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 01:57:12.089 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.005ms - processed: 0 items - remaining: 1 items
+2025-10-31 01:57:22.091 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 01:57:22.093 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0047ms - processed: 0 items - remaining: 1 items
+2025-10-31 01:57:32.094 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 01:57:32.096 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0055ms - processed: 0 items - remaining: 1 items
+2025-10-31 01:57:42.112 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 01:57:42.114 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0053ms - processed: 0 items - remaining: 1 items
+2025-10-31 01:57:52.992 +05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-31 01:57:53.144 +05:00 [DBG] Hosting starting
+2025-10-31 01:57:53.205 +05:00 [INF] CacheWarmupWorker started
+2025-10-31 01:57:53.244 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-10-31 01:57:53.248 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-10-31 01:57:53.346 +05:00 [DBG] Middleware loaded
+2025-10-31 01:57:53.351 +05:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16509 B).
+2025-10-31 01:57:53.354 +05:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-10-31 01:57:53.496 +05:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-10-31 01:57:53.500 +05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-31 01:57:53.503 +05:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-10-31 01:57:53.638 +05:00 [DBG] Connection id "0HNGNURVBPSQF" accepted.
+2025-10-31 01:57:53.639 +05:00 [DBG] Connection id "0HNGNURVBPSQG" accepted.
+2025-10-31 01:57:53.641 +05:00 [DBG] Connection id "0HNGNURVBPSQF" started.
+2025-10-31 01:57:53.641 +05:00 [DBG] Connection id "0HNGNURVBPSQG" started.
+2025-10-31 01:57:53.646 +05:00 [DBG] Connection id "0HNGNURVBPSQG" received FIN.
+2025-10-31 01:57:53.646 +05:00 [DBG] Connection id "0HNGNURVBPSQF" received FIN.
+2025-10-31 01:57:53.659 +05:00 [INF] Now listening on: https://localhost:7288
+2025-10-31 01:57:53.661 +05:00 [INF] Now listening on: http://localhost:5198
+2025-10-31 01:57:53.663 +05:00 [DBG] Loaded hosting startup assembly MovieService
+2025-10-31 01:57:53.663 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-10-31 01:57:53.664 +05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-31 01:57:53.663 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-10-31 01:57:53.690 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-10-31 01:57:53.694 +05:00 [DBG] Connection id "0HNGNURVBPSQG" stopped.
+2025-10-31 01:57:53.694 +05:00 [DBG] Connection id "0HNGNURVBPSQF" stopped.
+2025-10-31 01:57:53.695 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-31 01:57:53.698 +05:00 [DBG] Connection id "0HNGNURVBPSQF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-31 01:57:53.698 +05:00 [DBG] Connection id "0HNGNURVBPSQG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-31 01:57:53.707 +05:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-10-31 01:57:53.709 +05:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-10-31 01:57:53.766 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-31 01:57:53.768 +05:00 [INF] Hosting environment: Development
+2025-10-31 01:57:53.769 +05:00 [INF] Content root path: D:\ASPNET\PNDCProject\MovieService\MovieService
+2025-10-31 01:57:53.770 +05:00 [DBG] Hosting started
+2025-10-31 01:57:54.056 +05:00 [DBG] Connection id "0HNGNURVBPSQH" accepted.
+2025-10-31 01:57:54.057 +05:00 [DBG] Connection id "0HNGNURVBPSQH" started.
+2025-10-31 01:57:54.074 +05:00 [DBG] Connection 0HNGNURVBPSQH established using the following protocol: "Tls13"
+2025-10-31 01:57:54.075 +05:00 [INF] Received HTTP response headers after 823.146ms - 200
+2025-10-31 01:57:54.082 +05:00 [INF] End processing HTTP request after 840.7549ms - 200
+2025-10-31 01:57:54.124 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-10-31 01:57:54.126 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-10-31 01:57:54.163 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/index.html - null null
+2025-10-31 01:57:54.230 +05:00 [DBG] No candidates found for the request path '/index.html'
+2025-10-31 01:57:54.232 +05:00 [DBG] Request did not match any endpoints
+2025-10-31 01:57:54.259 +05:00 [INF] HTTP GET /index.html responded 404 in 2.9808 ms
+2025-10-31 01:57:54.269 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/index.html - 404 null null 120.6901ms
+2025-10-31 01:57:54.275 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7288/index.html, Response status code: 404
+2025-10-31 01:57:54.288 +05:00 [INF] Received HTTP response headers after 160.608ms - 200
+2025-10-31 01:57:54.290 +05:00 [INF] End processing HTTP request after 165.7106ms - 200
+2025-10-31 01:57:54.305 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-10-31 01:57:54.307 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-10-31 01:57:54.431 +05:00 [INF] Received HTTP response headers after 122.5455ms - 200
+2025-10-31 01:57:54.433 +05:00 [INF] End processing HTTP request after 128.1832ms - 200
+2025-10-31 01:58:03.427 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/health - null null
+2025-10-31 01:58:03.444 +05:00 [DBG] 1 candidate(s) found for the request path '/health'
+2025-10-31 01:58:03.447 +05:00 [DBG] Request matched endpoint 'Health checks'
+2025-10-31 01:58:03.455 +05:00 [INF] Executing endpoint 'Health checks'
+2025-10-31 01:58:03.461 +05:00 [DBG] Running health checks
+2025-10-31 01:58:03.469 +05:00 [DBG] Health check processing with combined status "Healthy" completed after 4.3602ms
+2025-10-31 01:58:03.478 +05:00 [INF] Executed endpoint 'Health checks'
+2025-10-31 01:58:03.480 +05:00 [INF] HTTP GET /health responded 200 in 26.5171 ms
+2025-10-31 01:58:03.488 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/health - 200 null text/plain 61.3465ms
+2025-10-31 01:59:53.244 +05:00 [DBG] HttpMessageHandler expired after 120000ms for client 'tmdb'
+2025-10-31 02:00:03.252 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 02:00:03.257 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0781ms - processed: 0 items - remaining: 1 items
+2025-10-31 02:00:13.265 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 02:00:13.269 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0059ms - processed: 0 items - remaining: 1 items
+2025-10-31 02:00:23.277 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 02:00:23.280 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0074ms - processed: 0 items - remaining: 1 items
+2025-10-31 02:00:33.294 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 02:00:33.296 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0064ms - processed: 0 items - remaining: 1 items
+2025-10-31 02:00:43.297 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 02:00:43.299 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0063ms - processed: 0 items - remaining: 1 items
+2025-10-31 02:00:53.311 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 02:00:53.313 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0059ms - processed: 0 items - remaining: 1 items
+2025-10-31 02:01:03.317 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 02:01:03.319 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0053ms - processed: 0 items - remaining: 1 items
+2025-10-31 02:01:13.328 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 02:01:13.330 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0055ms - processed: 0 items - remaining: 1 items
+2025-10-31 02:01:23.345 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-10-31 02:01:23.347 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.005ms - processed: 0 items - remaining: 1 items

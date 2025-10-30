@@ -79,3 +79,10 @@ D:\ASPNET\PNDCProject\MovieService\MovieService\obj\Debug\net9.0\ref\MovieServic
 D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\OpenTelemetry.Exporter.Console.dll
+D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\OpenTelemetry.Instrumentation.AspNetCore.dll
+D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\OpenTelemetry.Instrumentation.Http.dll

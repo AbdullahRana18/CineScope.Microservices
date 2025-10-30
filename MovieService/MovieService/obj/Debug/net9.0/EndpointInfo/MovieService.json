@@ -2,6 +2,7 @@
   "openapi": "3.0.4",
   "info": {
     "title": "MovieService API",
+    "description": "API for searching and fetching movies using TMDB.",
     "version": "v1"
   },
   "paths": {
