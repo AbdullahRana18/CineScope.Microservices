@@ -36,17 +36,29 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/IdsRequest"
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/IdsRequest"
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/IdsRequest"
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
               }
             }
           }
@@ -59,22 +71,5 @@
       }
     }
   },
-  "components": {
-    "schemas": {
-      "IdsRequest": {
-        "type": "object",
-        "properties": {
-          "ids": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
-  }
+  "components": { }
 }

@@ -1,0 +1,998 @@
+2025-11-02 00:06:08.430 +05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-02 00:06:08.658 +05:00 [DBG] Hosting starting
+2025-11-02 00:06:08.702 +05:00 [INF] CacheWarmupWorker started
+2025-11-02 00:06:08.732 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:06:08.735 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:06:08.816 +05:00 [DBG] Middleware loaded
+2025-11-02 00:06:08.818 +05:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16509 B).
+2025-11-02 00:06:08.819 +05:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-02 00:06:08.897 +05:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-11-02 00:06:08.900 +05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-02 00:06:08.902 +05:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-02 00:06:09.025 +05:00 [INF] Now listening on: https://localhost:7288
+2025-11-02 00:06:09.026 +05:00 [DBG] Connection id "0HNGPF6RKRLK2" accepted.
+2025-11-02 00:06:09.031 +05:00 [DBG] Connection id "0HNGPF6RKRLK3" accepted.
+2025-11-02 00:06:09.065 +05:00 [INF] Now listening on: http://localhost:5198
+2025-11-02 00:06:09.064 +05:00 [DBG] Connection id "0HNGPF6RKRLK3" received FIN.
+2025-11-02 00:06:09.064 +05:00 [DBG] Connection id "0HNGPF6RKRLK2" received FIN.
+2025-11-02 00:06:09.076 +05:00 [DBG] Connection id "0HNGPF6RKRLK2" started.
+2025-11-02 00:06:09.076 +05:00 [DBG] Connection id "0HNGPF6RKRLK3" started.
+2025-11-02 00:06:09.078 +05:00 [DBG] Loaded hosting startup assembly MovieService
+2025-11-02 00:06:09.084 +05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-02 00:06:09.085 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-02 00:06:09.086 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-02 00:06:09.095 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-02 00:06:09.097 +05:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-02 00:06:09.095 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-02 00:06:09.163 +05:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-02 00:06:09.152 +05:00 [DBG] Connection id "0HNGPF6RKRLK2" stopped.
+2025-11-02 00:06:09.242 +05:00 [DBG] Connection id "0HNGPF6RKRLK3" stopped.
+2025-11-02 00:06:09.258 +05:00 [DBG] Connection id "0HNGPF6RKRLK2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-02 00:06:09.261 +05:00 [DBG] Connection id "0HNGPF6RKRLK3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-02 00:06:09.353 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-02 00:06:09.414 +05:00 [INF] Hosting environment: Development
+2025-11-02 00:06:09.418 +05:00 [INF] Content root path: D:\ASPNET\PNDCProject\MovieService\MovieService
+2025-11-02 00:06:09.426 +05:00 [DBG] Hosting started
+2025-11-02 00:06:09.874 +05:00 [INF] Received HTTP response headers after 1134.8204ms - 200
+2025-11-02 00:06:09.878 +05:00 [INF] End processing HTTP request after 1148.5783ms - 200
+2025-11-02 00:06:09.896 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:06:09.897 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:06:10.151 +05:00 [INF] Received HTTP response headers after 252.3329ms - 200
+2025-11-02 00:06:10.152 +05:00 [INF] End processing HTTP request after 255.4226ms - 200
+2025-11-02 00:06:10.153 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:06:10.154 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:06:10.398 +05:00 [INF] Received HTTP response headers after 243.5175ms - 200
+2025-11-02 00:06:10.399 +05:00 [INF] End processing HTTP request after 246.546ms - 200
+2025-11-02 00:06:11.444 +05:00 [DBG] Connection id "0HNGPF6RKRLK4" accepted.
+2025-11-02 00:06:11.446 +05:00 [DBG] Connection id "0HNGPF6RKRLK4" started.
+2025-11-02 00:06:11.467 +05:00 [DBG] Connection 0HNGPF6RKRLK4 established using the following protocol: "Tls13"
+2025-11-02 00:06:11.513 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/index.html - null null
+2025-11-02 00:06:11.559 +05:00 [DBG] No candidates found for the request path '/index.html'
+2025-11-02 00:06:11.561 +05:00 [DBG] Request did not match any endpoints
+2025-11-02 00:06:11.577 +05:00 [INF] HTTP GET /index.html responded 404 in 1.7046 ms
+2025-11-02 00:06:11.582 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/index.html - 404 null null 76.3705ms
+2025-11-02 00:06:11.585 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7288/index.html, Response status code: 404
+2025-11-02 00:06:11.645 +05:00 [DBG] Connection id "0HNGPF6RKRLK4" received FIN.
+2025-11-02 00:06:11.651 +05:00 [DBG] The connection queue processing loop for 0HNGPF6RKRLK4 completed.
+2025-11-02 00:06:11.652 +05:00 [DBG] Connection id "0HNGPF6RKRLK4" is closed. The last processed stream ID was 1.
+2025-11-02 00:06:11.654 +05:00 [DBG] Connection id "0HNGPF6RKRLK4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-02 00:06:11.661 +05:00 [DBG] Connection id "0HNGPF6RKRLK4" stopped.
+2025-11-02 00:06:21.308 +05:00 [DBG] Connection id "0HNGPF6RKRLK5" accepted.
+2025-11-02 00:06:21.309 +05:00 [DBG] Connection id "0HNGPF6RKRLK5" started.
+2025-11-02 00:06:21.312 +05:00 [DBG] Connection 0HNGPF6RKRLK5 established using the following protocol: "Tls13"
+2025-11-02 00:06:21.314 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-02 00:06:21.322 +05:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-11-02 00:06:21.323 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 8.8873ms
+2025-11-02 00:06:21.340 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/_vs/browserLink - null null
+2025-11-02 00:06:21.391 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.8143ms
+2025-11-02 00:06:21.437 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/swagger/v1/swagger.json - null null
+2025-11-02 00:06:21.440 +05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-02 00:06:21.441 +05:00 [DBG] Request did not match any endpoints
+2025-11-02 00:06:21.448 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.8292ms
+2025-11-02 00:08:08.736 +05:00 [DBG] HttpMessageHandler expired after 120000ms for client 'tmdb'
+2025-11-02 00:08:18.751 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:08:18.755 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0322ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:08:28.765 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:08:28.766 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0033ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:08:38.774 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:08:38.775 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0026ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:08:48.781 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:08:48.782 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0037ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:15:12.189 +05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-02 00:15:12.310 +05:00 [DBG] Hosting starting
+2025-11-02 00:15:12.356 +05:00 [INF] CacheWarmupWorker started
+2025-11-02 00:15:12.383 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:15:12.386 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:15:12.457 +05:00 [DBG] Middleware loaded
+2025-11-02 00:15:12.461 +05:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16509 B).
+2025-11-02 00:15:12.463 +05:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-02 00:15:12.529 +05:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-11-02 00:15:12.531 +05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-02 00:15:12.533 +05:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-02 00:15:12.621 +05:00 [INF] Now listening on: https://localhost:7288
+2025-11-02 00:15:12.626 +05:00 [INF] Now listening on: http://localhost:5198
+2025-11-02 00:15:12.626 +05:00 [DBG] Loaded hosting startup assembly MovieService
+2025-11-02 00:15:12.627 +05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-02 00:15:12.628 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-02 00:15:12.628 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-02 00:15:12.634 +05:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-02 00:15:12.636 +05:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-02 00:15:12.674 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-02 00:15:12.675 +05:00 [INF] Hosting environment: Development
+2025-11-02 00:15:12.676 +05:00 [INF] Content root path: D:\ASPNET\PNDCProject\MovieService\MovieService
+2025-11-02 00:15:12.677 +05:00 [DBG] Hosting started
+2025-11-02 00:15:12.793 +05:00 [DBG] Connection id "0HNGPFBTMK8GI" accepted.
+2025-11-02 00:15:12.794 +05:00 [DBG] Connection id "0HNGPFBTMK8GI" started.
+2025-11-02 00:15:12.807 +05:00 [DBG] Connection id "0HNGPFBTMK8GJ" received FIN.
+2025-11-02 00:15:12.807 +05:00 [DBG] Connection id "0HNGPFBTMK8GI" received FIN.
+2025-11-02 00:15:12.809 +05:00 [DBG] Connection id "0HNGPFBTMK8GJ" accepted.
+2025-11-02 00:15:12.810 +05:00 [DBG] Connection id "0HNGPFBTMK8GJ" started.
+2025-11-02 00:15:12.819 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-02 00:15:12.819 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-02 00:15:12.860 +05:00 [DBG] Connection id "0HNGPFBTMK8GJ" stopped.
+2025-11-02 00:15:12.864 +05:00 [DBG] Connection id "0HNGPFBTMK8GI" stopped.
+2025-11-02 00:15:12.868 +05:00 [DBG] Connection id "0HNGPFBTMK8GJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-02 00:15:12.875 +05:00 [DBG] Connection id "0HNGPFBTMK8GI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-02 00:15:13.162 +05:00 [INF] Received HTTP response headers after 772.7287ms - 200
+2025-11-02 00:15:13.168 +05:00 [INF] End processing HTTP request after 787.1467ms - 200
+2025-11-02 00:15:13.192 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:15:13.194 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:15:13.456 +05:00 [INF] Received HTTP response headers after 260.3852ms - 200
+2025-11-02 00:15:13.459 +05:00 [INF] End processing HTTP request after 267.0605ms - 200
+2025-11-02 00:15:13.463 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:15:13.467 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:15:13.488 +05:00 [DBG] Connection id "0HNGPFBTMK8GK" accepted.
+2025-11-02 00:15:13.496 +05:00 [DBG] Connection id "0HNGPFBTMK8GK" started.
+2025-11-02 00:15:13.569 +05:00 [DBG] Connection 0HNGPFBTMK8GK established using the following protocol: "Tls13"
+2025-11-02 00:15:13.611 +05:00 [INF] Received HTTP response headers after 140.661ms - 200
+2025-11-02 00:15:13.613 +05:00 [INF] End processing HTTP request after 150.6795ms - 200
+2025-11-02 00:15:13.657 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/ - null null
+2025-11-02 00:15:13.717 +05:00 [DBG] No candidates found for the request path '/'
+2025-11-02 00:15:13.721 +05:00 [DBG] Request did not match any endpoints
+2025-11-02 00:15:13.744 +05:00 [INF] HTTP GET / responded 404 in 2.6872 ms
+2025-11-02 00:15:13.752 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/ - 404 null null 105.8668ms
+2025-11-02 00:15:13.756 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7288/, Response status code: 404
+2025-11-02 00:15:13.757 +05:00 [DBG] Connection id "0HNGPFBTMK8GK" received FIN.
+2025-11-02 00:15:13.766 +05:00 [DBG] Connection id "0HNGPFBTMK8GK" is closed. The last processed stream ID was 1.
+2025-11-02 00:15:13.769 +05:00 [DBG] Connection id "0HNGPFBTMK8GK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-02 00:15:13.770 +05:00 [DBG] The connection queue processing loop for 0HNGPFBTMK8GK completed.
+2025-11-02 00:15:13.773 +05:00 [DBG] Connection id "0HNGPFBTMK8GK" stopped.
+2025-11-02 00:17:12.389 +05:00 [DBG] HttpMessageHandler expired after 120000ms for client 'tmdb'
+2025-11-02 00:17:22.404 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:17:22.408 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.046ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:17:32.412 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:17:32.413 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0052ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:17:41.669 +05:00 [DBG] Connection id "0HNGPFBTMK8GL" accepted.
+2025-11-02 00:17:41.675 +05:00 [DBG] Connection id "0HNGPFBTMK8GL" received FIN.
+2025-11-02 00:17:41.679 +05:00 [DBG] Connection id "0HNGPFBTMK8GL" started.
+2025-11-02 00:17:41.679 +05:00 [DBG] Connection id "0HNGPFBTMK8GM" accepted.
+2025-11-02 00:17:41.683 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-02 00:17:41.683 +05:00 [DBG] Connection id "0HNGPFBTMK8GM" started.
+2025-11-02 00:17:41.685 +05:00 [DBG] Connection id "0HNGPFBTMK8GL" stopped.
+2025-11-02 00:17:41.686 +05:00 [DBG] Connection id "0HNGPFBTMK8GL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-02 00:17:41.689 +05:00 [DBG] Connection 0HNGPFBTMK8GM established using the following protocol: "Tls13"
+2025-11-02 00:17:41.694 +05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7288/api/Movies/search?q=afridi - null null
+2025-11-02 00:17:41.698 +05:00 [DBG] 1 candidate(s) found for the request path '/api/Movies/search'
+2025-11-02 00:17:41.699 +05:00 [DBG] Endpoint 'MovieService.Controllers.MoviesController.Search (MovieService)' with route pattern 'api/Movies/search' is valid for the request path '/api/Movies/search'
+2025-11-02 00:17:41.701 +05:00 [DBG] Request matched endpoint 'MovieService.Controllers.MoviesController.Search (MovieService)'
+2025-11-02 00:17:41.710 +05:00 [INF] Executing endpoint 'MovieService.Controllers.MoviesController.Search (MovieService)'
+2025-11-02 00:17:41.730 +05:00 [INF] Route matched with {action = "Search", controller = "Movies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Search(System.String, System.Threading.CancellationToken) on controller MovieService.Controllers.MoviesController (MovieService).
+2025-11-02 00:17:41.733 +05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-02 00:17:41.734 +05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-02 00:17:41.735 +05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-02 00:17:41.736 +05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-02 00:17:41.737 +05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-02 00:17:41.740 +05:00 [DBG] Executing controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:17:41.741 +05:00 [DBG] Executed controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:17:41.751 +05:00 [DBG] Attempting to bind parameter 'q' of type 'System.String' ...
+2025-11-02 00:17:41.754 +05:00 [DBG] Attempting to bind parameter 'q' of type 'System.String' using the name 'q' in request data ...
+2025-11-02 00:17:41.756 +05:00 [DBG] Done attempting to bind parameter 'q' of type 'System.String'.
+2025-11-02 00:17:41.757 +05:00 [DBG] Done attempting to bind parameter 'q' of type 'System.String'.
+2025-11-02 00:17:41.758 +05:00 [DBG] Attempting to validate the bound parameter 'q' of type 'System.String' ...
+2025-11-02 00:17:41.762 +05:00 [DBG] Done attempting to validate the bound parameter 'q' of type 'System.String'.
+2025-11-02 00:17:41.763 +05:00 [DBG] Attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:17:41.764 +05:00 [DBG] Done attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:17:41.765 +05:00 [DBG] Attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:17:41.766 +05:00 [DBG] Done attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:17:41.770 +05:00 [INF] Executing action method MovieService.Controllers.MoviesController.Search (MovieService) - Validation state: "Valid"
+2025-11-02 00:17:41.776 +05:00 [INF] Start processing HTTP request POST https://localhost:7016/api/Auth/validate
+2025-11-02 00:17:41.777 +05:00 [INF] Sending HTTP request POST https://localhost:7016/api/Auth/validate
+2025-11-02 00:17:41.840 +05:00 [INF] Received HTTP response headers after 62.1832ms - 200
+2025-11-02 00:17:41.841 +05:00 [INF] End processing HTTP request after 64.8471ms - 200
+2025-11-02 00:17:41.844 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:17:41.845 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:17:42.421 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:17:42.423 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.007ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:17:42.433 +05:00 [INF] Received HTTP response headers after 586.832ms - 200
+2025-11-02 00:17:42.433 +05:00 [INF] End processing HTTP request after 589.0682ms - 200
+2025-11-02 00:17:42.438 +05:00 [INF] Executed action method MovieService.Controllers.MoviesController.Search (MovieService), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 664.4801ms.
+2025-11-02 00:17:42.442 +05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-02 00:17:42.445 +05:00 [DBG] No information found on request to perform content negotiation.
+2025-11-02 00:17:42.445 +05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-02 00:17:42.446 +05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-02 00:17:42.447 +05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-02 00:17:42.448 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MovieService.Models.MovieDto, MovieService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-02 00:17:42.455 +05:00 [INF] Executed action MovieService.Controllers.MoviesController.Search (MovieService) in 714.1226ms
+2025-11-02 00:17:42.456 +05:00 [INF] Executed endpoint 'MovieService.Controllers.MoviesController.Search (MovieService)'
+2025-11-02 00:17:42.457 +05:00 [INF] HTTP GET /api/Movies/search responded 200 in 753.9647 ms
+2025-11-02 00:17:42.459 +05:00 [DBG] Connection id "0HNGPFBTMK8GM" completed keep alive response.
+2025-11-02 00:17:42.460 +05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7288/api/Movies/search?q=afridi - 200 null application/json; charset=utf-8 767.0335ms
+2025-11-02 00:17:52.433 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:17:52.435 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0049ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:17:57.597 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - application/json 64
+2025-11-02 00:17:57.600 +05:00 [DBG] 1 candidate(s) found for the request path '/api/Movies/bulk'
+2025-11-02 00:17:57.601 +05:00 [DBG] Endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)' with route pattern 'api/Movies/bulk' is valid for the request path '/api/Movies/bulk'
+2025-11-02 00:17:57.602 +05:00 [DBG] Request matched endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:17:57.603 +05:00 [INF] Executing endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:17:57.607 +05:00 [INF] Route matched with {action = "Bulk", controller = "Movies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Bulk(IdsRequest, System.Threading.CancellationToken) on controller MovieService.Controllers.MoviesController (MovieService).
+2025-11-02 00:17:57.608 +05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-02 00:17:57.609 +05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-02 00:17:57.610 +05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-02 00:17:57.611 +05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-02 00:17:57.612 +05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-02 00:17:57.613 +05:00 [DBG] Executing controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:17:57.615 +05:00 [DBG] Executed controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:17:57.616 +05:00 [DBG] Attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest' ...
+2025-11-02 00:17:57.617 +05:00 [DBG] Attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest' using the name '' in request data ...
+2025-11-02 00:17:57.619 +05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-02 00:17:57.623 +05:00 [DBG] Connection id "0HNGPFBTMK8GM", Request id "0HNGPFBTMK8GM:00000002": started reading request body.
+2025-11-02 00:17:57.624 +05:00 [DBG] Connection id "0HNGPFBTMK8GM", Request id "0HNGPFBTMK8GM:00000002": done reading request body.
+2025-11-02 00:17:57.634 +05:00 [DBG] JSON input formatter threw an exception: The JSON value could not be converted to MovieService.Controllers.MoviesController+IdsRequest. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+2025-11-02 00:17:57.635 +05:00 [DBG] Done attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest'.
+2025-11-02 00:17:57.636 +05:00 [DBG] Done attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest'.
+2025-11-02 00:17:57.637 +05:00 [DBG] Attempting to validate the bound parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest' ...
+2025-11-02 00:17:57.639 +05:00 [DBG] Done attempting to validate the bound parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest'.
+2025-11-02 00:17:57.640 +05:00 [DBG] Attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:17:57.641 +05:00 [DBG] Done attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:17:57.642 +05:00 [DBG] Attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:17:57.642 +05:00 [DBG] Done attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:17:57.643 +05:00 [DBG] The request has model state errors, returning an error response.
+2025-11-02 00:17:57.645 +05:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-11-02 00:17:57.645 +05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-02 00:17:57.647 +05:00 [DBG] No information found on request to perform content negotiation.
+2025-11-02 00:17:57.647 +05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-11-02 00:17:57.649 +05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-11-02 00:17:57.649 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-02 00:17:57.664 +05:00 [INF] Executed action MovieService.Controllers.MoviesController.Bulk (MovieService) in 51.4862ms
+2025-11-02 00:17:57.666 +05:00 [INF] Executed endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:17:57.666 +05:00 [INF] HTTP POST /api/Movies/bulk responded 400 in 63.4703 ms
+2025-11-02 00:17:57.668 +05:00 [DBG] Connection id "0HNGPFBTMK8GM" completed keep alive response.
+2025-11-02 00:17:57.669 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - 400 null application/problem+json; charset=utf-8 71.7476ms
+2025-11-02 00:18:02.447 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:18:02.448 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0029ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:18:12.461 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:18:12.462 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0039ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:18:22.468 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:18:22.468 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0035ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:18:32.260 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - application/json 26
+2025-11-02 00:18:32.262 +05:00 [DBG] 1 candidate(s) found for the request path '/api/Movies/bulk'
+2025-11-02 00:18:32.262 +05:00 [DBG] Endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)' with route pattern 'api/Movies/bulk' is valid for the request path '/api/Movies/bulk'
+2025-11-02 00:18:32.263 +05:00 [DBG] Request matched endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:18:32.264 +05:00 [INF] Executing endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:18:32.265 +05:00 [INF] Route matched with {action = "Bulk", controller = "Movies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Bulk(IdsRequest, System.Threading.CancellationToken) on controller MovieService.Controllers.MoviesController (MovieService).
+2025-11-02 00:18:32.265 +05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-02 00:18:32.266 +05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-02 00:18:32.267 +05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-02 00:18:32.268 +05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-02 00:18:32.269 +05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-02 00:18:32.270 +05:00 [DBG] Executing controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:18:32.271 +05:00 [DBG] Executed controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:18:32.272 +05:00 [DBG] Attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest' ...
+2025-11-02 00:18:32.272 +05:00 [DBG] Attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest' using the name '' in request data ...
+2025-11-02 00:18:32.273 +05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-02 00:18:32.274 +05:00 [DBG] Connection id "0HNGPFBTMK8GM", Request id "0HNGPFBTMK8GM:00000003": started reading request body.
+2025-11-02 00:18:32.275 +05:00 [DBG] Connection id "0HNGPFBTMK8GM", Request id "0HNGPFBTMK8GM:00000003": done reading request body.
+2025-11-02 00:18:32.276 +05:00 [DBG] JSON input formatter threw an exception: The JSON value could not be converted to MovieService.Controllers.MoviesController+IdsRequest. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+2025-11-02 00:18:32.277 +05:00 [DBG] Done attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest'.
+2025-11-02 00:18:32.277 +05:00 [DBG] Done attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest'.
+2025-11-02 00:18:32.278 +05:00 [DBG] Attempting to validate the bound parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest' ...
+2025-11-02 00:18:32.279 +05:00 [DBG] Done attempting to validate the bound parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest'.
+2025-11-02 00:18:32.279 +05:00 [DBG] Attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:18:32.280 +05:00 [DBG] Done attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:18:32.281 +05:00 [DBG] Attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:18:32.281 +05:00 [DBG] Done attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:18:32.282 +05:00 [DBG] The request has model state errors, returning an error response.
+2025-11-02 00:18:32.283 +05:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-11-02 00:18:32.283 +05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-02 00:18:32.285 +05:00 [DBG] No information found on request to perform content negotiation.
+2025-11-02 00:18:32.285 +05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-11-02 00:18:32.286 +05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-11-02 00:18:32.287 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-02 00:18:32.288 +05:00 [INF] Executed action MovieService.Controllers.MoviesController.Bulk (MovieService) in 18.0904ms
+2025-11-02 00:18:32.289 +05:00 [INF] Executed endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:18:32.289 +05:00 [INF] HTTP POST /api/Movies/bulk responded 400 in 25.5156 ms
+2025-11-02 00:18:32.290 +05:00 [DBG] Connection id "0HNGPFBTMK8GM" completed keep alive response.
+2025-11-02 00:18:32.291 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - 400 null application/problem+json; charset=utf-8 31.119ms
+2025-11-02 00:18:32.476 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:18:32.478 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0051ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:18:42.492 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:18:42.494 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0076ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:18:49.628 +05:00 [DBG] Connection id "0HNGPFBTMK8GN" accepted.
+2025-11-02 00:18:49.629 +05:00 [DBG] Connection id "0HNGPFBTMK8GN" started.
+2025-11-02 00:18:49.647 +05:00 [DBG] Connection 0HNGPFBTMK8GN established using the following protocol: "Tls13"
+2025-11-02 00:18:49.730 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-02 00:18:49.762 +05:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-11-02 00:18:49.763 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 33.8551ms
+2025-11-02 00:18:49.943 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/swagger/v1/swagger.json - null null
+2025-11-02 00:18:49.945 +05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-02 00:18:49.946 +05:00 [DBG] Request did not match any endpoints
+2025-11-02 00:18:49.955 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.778ms
+2025-11-02 00:18:49.955 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/swagger/favicon-32x32.png - null null
+2025-11-02 00:18:49.960 +05:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2025-11-02 00:18:49.961 +05:00 [DBG] Request did not match any endpoints
+2025-11-02 00:18:49.975 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/swagger/favicon-32x32.png - 200 628 image/png 20.82ms
+2025-11-02 00:18:52.502 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:18:52.503 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0092ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:19:02.516 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:19:02.517 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0045ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:19:12.528 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:19:12.529 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0037ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:19:22.544 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:19:22.545 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0039ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:19:32.555 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:19:32.556 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0045ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:19:41.781 +05:00 [DBG] HttpMessageHandler expired after 120000ms for client 'auth'
+2025-11-02 00:19:41.858 +05:00 [DBG] HttpMessageHandler expired after 120000ms for client 'tmdb'
+2025-11-02 00:19:42.558 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:19:42.559 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0035ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:19:52.563 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:19:52.565 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0057ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:20:02.581 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:20:02.583 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0062ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:20:03.215 +05:00 [DBG] Connection id "0HNGPFBTMK8GO" accepted.
+2025-11-02 00:20:03.221 +05:00 [DBG] Connection id "0HNGPFBTMK8GO" received FIN.
+2025-11-02 00:20:03.226 +05:00 [DBG] Connection id "0HNGPFBTMK8GO" started.
+2025-11-02 00:20:03.226 +05:00 [DBG] Connection id "0HNGPFBTMK8GP" accepted.
+2025-11-02 00:20:03.254 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-02 00:20:03.254 +05:00 [DBG] Connection id "0HNGPFBTMK8GP" started.
+2025-11-02 00:20:03.256 +05:00 [DBG] Connection id "0HNGPFBTMK8GO" stopped.
+2025-11-02 00:20:03.257 +05:00 [DBG] Connection id "0HNGPFBTMK8GO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-02 00:20:03.259 +05:00 [DBG] Connection 0HNGPFBTMK8GP established using the following protocol: "Tls13"
+2025-11-02 00:20:03.260 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - application/json 31
+2025-11-02 00:20:03.261 +05:00 [DBG] 1 candidate(s) found for the request path '/api/Movies/bulk'
+2025-11-02 00:20:03.262 +05:00 [DBG] Endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)' with route pattern 'api/Movies/bulk' is valid for the request path '/api/Movies/bulk'
+2025-11-02 00:20:03.263 +05:00 [DBG] Request matched endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:20:03.264 +05:00 [INF] Executing endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:20:03.265 +05:00 [INF] Route matched with {action = "Bulk", controller = "Movies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Bulk(IdsRequest, System.Threading.CancellationToken) on controller MovieService.Controllers.MoviesController (MovieService).
+2025-11-02 00:20:03.266 +05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-02 00:20:03.267 +05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-02 00:20:03.268 +05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-02 00:20:03.269 +05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-02 00:20:03.270 +05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-02 00:20:03.271 +05:00 [DBG] Executing controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:20:03.272 +05:00 [DBG] Executed controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:20:03.272 +05:00 [DBG] Attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest' ...
+2025-11-02 00:20:03.273 +05:00 [DBG] Attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest' using the name '' in request data ...
+2025-11-02 00:20:03.274 +05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-02 00:20:03.275 +05:00 [DBG] Connection id "0HNGPFBTMK8GP", Request id "0HNGPFBTMK8GP:00000001": started reading request body.
+2025-11-02 00:20:03.276 +05:00 [DBG] Connection id "0HNGPFBTMK8GP", Request id "0HNGPFBTMK8GP:00000001": done reading request body.
+2025-11-02 00:20:03.277 +05:00 [DBG] JSON input formatter succeeded, deserializing to type 'MovieService.Controllers.MoviesController+IdsRequest'
+2025-11-02 00:20:03.278 +05:00 [DBG] Done attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest'.
+2025-11-02 00:20:03.278 +05:00 [DBG] Done attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest'.
+2025-11-02 00:20:03.279 +05:00 [DBG] Attempting to validate the bound parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest' ...
+2025-11-02 00:20:03.290 +05:00 [DBG] Done attempting to validate the bound parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest'.
+2025-11-02 00:20:03.291 +05:00 [DBG] Attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:20:03.292 +05:00 [DBG] Done attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:20:03.293 +05:00 [DBG] Attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:20:03.294 +05:00 [DBG] Done attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:20:03.294 +05:00 [INF] Executing action method MovieService.Controllers.MoviesController.Bulk (MovieService) - Validation state: "Valid"
+2025-11-02 00:20:03.296 +05:00 [INF] Executed action method MovieService.Controllers.MoviesController.Bulk (MovieService), returned result Microsoft.AspNetCore.Mvc.UnauthorizedObjectResult in 0.842ms.
+2025-11-02 00:20:03.298 +05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-02 00:20:03.299 +05:00 [DBG] No information found on request to perform content negotiation.
+2025-11-02 00:20:03.299 +05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-02 00:20:03.300 +05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-02 00:20:03.301 +05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-11-02 00:20:03.301 +05:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-11-02 00:20:03.303 +05:00 [INF] Executed action MovieService.Controllers.MoviesController.Bulk (MovieService) in 31.7496ms
+2025-11-02 00:20:03.303 +05:00 [INF] Executed endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:20:03.304 +05:00 [INF] HTTP POST /api/Movies/bulk responded 401 in 40.0941 ms
+2025-11-02 00:20:03.305 +05:00 [DBG] Connection id "0HNGPFBTMK8GP" completed keep alive response.
+2025-11-02 00:20:03.306 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - 401 null text/plain; charset=utf-8 46.2474ms
+2025-11-02 00:20:12.598 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:20:12.599 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0051ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:20:22.600 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:20:22.601 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0036ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:20:32.606 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:20:32.607 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0087ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:20:42.612 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:20:42.613 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0056ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:20:52.625 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:20:52.626 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.1332ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:21:02.261 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - application/json 31
+2025-11-02 00:21:02.263 +05:00 [DBG] 1 candidate(s) found for the request path '/api/Movies/bulk'
+2025-11-02 00:21:02.263 +05:00 [DBG] Endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)' with route pattern 'api/Movies/bulk' is valid for the request path '/api/Movies/bulk'
+2025-11-02 00:21:02.265 +05:00 [DBG] Request matched endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:21:02.265 +05:00 [INF] Executing endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:21:02.266 +05:00 [INF] Route matched with {action = "Bulk", controller = "Movies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Bulk(IdsRequest, System.Threading.CancellationToken) on controller MovieService.Controllers.MoviesController (MovieService).
+2025-11-02 00:21:02.268 +05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-02 00:21:02.269 +05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-02 00:21:02.270 +05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-02 00:21:02.271 +05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-02 00:21:02.272 +05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-02 00:21:02.273 +05:00 [DBG] Executing controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:21:02.273 +05:00 [DBG] Executed controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:21:02.274 +05:00 [DBG] Attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest' ...
+2025-11-02 00:21:02.275 +05:00 [DBG] Attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest' using the name '' in request data ...
+2025-11-02 00:21:02.276 +05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-02 00:21:02.277 +05:00 [DBG] Connection id "0HNGPFBTMK8GP", Request id "0HNGPFBTMK8GP:00000002": started reading request body.
+2025-11-02 00:21:02.277 +05:00 [DBG] Connection id "0HNGPFBTMK8GP", Request id "0HNGPFBTMK8GP:00000002": done reading request body.
+2025-11-02 00:21:02.278 +05:00 [DBG] JSON input formatter succeeded, deserializing to type 'MovieService.Controllers.MoviesController+IdsRequest'
+2025-11-02 00:21:02.279 +05:00 [DBG] Done attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest'.
+2025-11-02 00:21:02.279 +05:00 [DBG] Done attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest'.
+2025-11-02 00:21:02.280 +05:00 [DBG] Attempting to validate the bound parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest' ...
+2025-11-02 00:21:02.281 +05:00 [DBG] Done attempting to validate the bound parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest'.
+2025-11-02 00:21:02.282 +05:00 [DBG] Attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:21:02.283 +05:00 [DBG] Done attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:21:02.284 +05:00 [DBG] Attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:21:02.285 +05:00 [DBG] Done attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:21:02.285 +05:00 [INF] Executing action method MovieService.Controllers.MoviesController.Bulk (MovieService) - Validation state: "Valid"
+2025-11-02 00:21:02.286 +05:00 [INF] Executed action method MovieService.Controllers.MoviesController.Bulk (MovieService), returned result Microsoft.AspNetCore.Mvc.UnauthorizedObjectResult in 0.0584ms.
+2025-11-02 00:21:02.287 +05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-02 00:21:02.288 +05:00 [DBG] No information found on request to perform content negotiation.
+2025-11-02 00:21:02.289 +05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-02 00:21:02.289 +05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-02 00:21:02.289 +05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-11-02 00:21:02.290 +05:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-11-02 00:21:02.291 +05:00 [INF] Executed action MovieService.Controllers.MoviesController.Bulk (MovieService) in 18.375ms
+2025-11-02 00:21:02.292 +05:00 [INF] Executed endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:21:02.292 +05:00 [INF] HTTP POST /api/Movies/bulk responded 401 in 27.1255 ms
+2025-11-02 00:21:02.294 +05:00 [DBG] Connection id "0HNGPFBTMK8GP" completed keep alive response.
+2025-11-02 00:21:02.294 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - 401 null text/plain; charset=utf-8 33.7309ms
+2025-11-02 00:21:02.631 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:21:02.632 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0034ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:21:12.645 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:21:12.646 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0035ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:21:21.161 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - application/json 31
+2025-11-02 00:21:21.163 +05:00 [DBG] 1 candidate(s) found for the request path '/api/Movies/bulk'
+2025-11-02 00:21:21.164 +05:00 [DBG] Endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)' with route pattern 'api/Movies/bulk' is valid for the request path '/api/Movies/bulk'
+2025-11-02 00:21:21.164 +05:00 [DBG] Request matched endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:21:21.165 +05:00 [INF] Executing endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:21:21.166 +05:00 [INF] Route matched with {action = "Bulk", controller = "Movies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Bulk(IdsRequest, System.Threading.CancellationToken) on controller MovieService.Controllers.MoviesController (MovieService).
+2025-11-02 00:21:21.167 +05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-02 00:21:21.168 +05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-02 00:21:21.169 +05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-02 00:21:21.170 +05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-02 00:21:21.171 +05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-02 00:21:21.172 +05:00 [DBG] Executing controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:21:21.172 +05:00 [DBG] Executed controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:21:21.173 +05:00 [DBG] Attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest' ...
+2025-11-02 00:21:21.174 +05:00 [DBG] Attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest' using the name '' in request data ...
+2025-11-02 00:21:21.175 +05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-02 00:21:21.176 +05:00 [DBG] Connection id "0HNGPFBTMK8GP", Request id "0HNGPFBTMK8GP:00000003": started reading request body.
+2025-11-02 00:21:21.176 +05:00 [DBG] Connection id "0HNGPFBTMK8GP", Request id "0HNGPFBTMK8GP:00000003": done reading request body.
+2025-11-02 00:21:21.177 +05:00 [DBG] JSON input formatter succeeded, deserializing to type 'MovieService.Controllers.MoviesController+IdsRequest'
+2025-11-02 00:21:21.177 +05:00 [DBG] Done attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest'.
+2025-11-02 00:21:21.178 +05:00 [DBG] Done attempting to bind parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest'.
+2025-11-02 00:21:21.179 +05:00 [DBG] Attempting to validate the bound parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest' ...
+2025-11-02 00:21:21.180 +05:00 [DBG] Done attempting to validate the bound parameter 'req' of type 'MovieService.Controllers.MoviesController+IdsRequest'.
+2025-11-02 00:21:21.181 +05:00 [DBG] Attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:21:21.181 +05:00 [DBG] Done attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:21:21.182 +05:00 [DBG] Attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:21:21.183 +05:00 [DBG] Done attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:21:21.184 +05:00 [INF] Executing action method MovieService.Controllers.MoviesController.Bulk (MovieService) - Validation state: "Valid"
+2025-11-02 00:21:21.184 +05:00 [INF] Executed action method MovieService.Controllers.MoviesController.Bulk (MovieService), returned result Microsoft.AspNetCore.Mvc.UnauthorizedObjectResult in 0.028ms.
+2025-11-02 00:21:21.185 +05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-02 00:21:21.186 +05:00 [DBG] No information found on request to perform content negotiation.
+2025-11-02 00:21:21.187 +05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-02 00:21:21.187 +05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-02 00:21:21.187 +05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-11-02 00:21:21.188 +05:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-11-02 00:21:21.189 +05:00 [INF] Executed action MovieService.Controllers.MoviesController.Bulk (MovieService) in 17.1282ms
+2025-11-02 00:21:21.190 +05:00 [INF] Executed endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:21:21.190 +05:00 [INF] HTTP POST /api/Movies/bulk responded 401 in 25.0475 ms
+2025-11-02 00:21:21.191 +05:00 [DBG] Connection id "0HNGPFBTMK8GP" completed keep alive response.
+2025-11-02 00:21:21.192 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - 401 null text/plain; charset=utf-8 30.7789ms
+2025-11-02 00:21:22.658 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:21:22.660 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.004ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:21:32.662 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:21:32.663 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0023ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:21:42.667 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:21:42.668 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0028ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:21:52.679 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:21:52.680 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0029ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:22:02.694 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:22:02.696 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0031ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:22:12.711 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:22:12.712 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0901ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:22:22.717 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:22:22.719 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.003ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:22:32.732 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-11-02 00:22:32.735 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0044ms - processed: 0 items - remaining: 3 items
+2025-11-02 00:25:32.670 +05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-02 00:25:32.783 +05:00 [DBG] Hosting starting
+2025-11-02 00:25:32.827 +05:00 [INF] CacheWarmupWorker started
+2025-11-02 00:25:32.854 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:25:32.857 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:25:32.948 +05:00 [DBG] Middleware loaded
+2025-11-02 00:25:32.952 +05:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16509 B).
+2025-11-02 00:25:32.954 +05:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-02 00:25:33.032 +05:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-11-02 00:25:33.035 +05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-02 00:25:33.038 +05:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-02 00:25:33.133 +05:00 [INF] Now listening on: https://localhost:7288
+2025-11-02 00:25:33.134 +05:00 [INF] Now listening on: http://localhost:5198
+2025-11-02 00:25:33.135 +05:00 [DBG] Loaded hosting startup assembly MovieService
+2025-11-02 00:25:33.135 +05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-02 00:25:33.136 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-02 00:25:33.136 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-02 00:25:33.143 +05:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-02 00:25:33.144 +05:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-02 00:25:33.196 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-02 00:25:33.196 +05:00 [INF] Hosting environment: Development
+2025-11-02 00:25:33.197 +05:00 [INF] Content root path: D:\ASPNET\PNDCProject\MovieService\MovieService
+2025-11-02 00:25:33.198 +05:00 [DBG] Hosting started
+2025-11-02 00:25:33.556 +05:00 [DBG] Connection id "0HNGPFHMMM0NR" accepted.
+2025-11-02 00:25:33.559 +05:00 [DBG] Connection id "0HNGPFHMMM0NR" started.
+2025-11-02 00:25:33.599 +05:00 [DBG] Connection id "0HNGPFHMMM0NS" accepted.
+2025-11-02 00:25:33.601 +05:00 [DBG] Connection id "0HNGPFHMMM0NS" started.
+2025-11-02 00:25:33.683 +05:00 [DBG] Connection id "0HNGPFHMMM0NS" received FIN.
+2025-11-02 00:25:33.683 +05:00 [DBG] Connection id "0HNGPFHMMM0NR" received FIN.
+2025-11-02 00:25:33.723 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-02 00:25:33.743 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-02 00:25:33.808 +05:00 [DBG] Connection id "0HNGPFHMMM0NS" stopped.
+2025-11-02 00:25:33.812 +05:00 [DBG] Connection id "0HNGPFHMMM0NR" stopped.
+2025-11-02 00:25:33.815 +05:00 [DBG] Connection id "0HNGPFHMMM0NS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-02 00:25:33.815 +05:00 [DBG] Connection id "0HNGPFHMMM0NR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-02 00:25:33.823 +05:00 [INF] Received HTTP response headers after 962.4038ms - 200
+2025-11-02 00:25:33.832 +05:00 [INF] End processing HTTP request after 979.6078ms - 200
+2025-11-02 00:25:33.857 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:25:33.859 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:25:33.888 +05:00 [DBG] Connection id "0HNGPFHMMM0NT" accepted.
+2025-11-02 00:25:33.890 +05:00 [DBG] Connection id "0HNGPFHMMM0NT" started.
+2025-11-02 00:25:33.915 +05:00 [DBG] Connection 0HNGPFHMMM0NT established using the following protocol: "Tls13"
+2025-11-02 00:25:33.965 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/ - null null
+2025-11-02 00:25:33.994 +05:00 [INF] Received HTTP response headers after 133.1893ms - 200
+2025-11-02 00:25:33.995 +05:00 [INF] End processing HTTP request after 138.2352ms - 200
+2025-11-02 00:25:34.008 +05:00 [DBG] No candidates found for the request path '/'
+2025-11-02 00:25:34.010 +05:00 [DBG] Request did not match any endpoints
+2025-11-02 00:25:34.012 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:25:34.013 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:25:34.030 +05:00 [INF] HTTP GET / responded 404 in 2.5423 ms
+2025-11-02 00:25:34.036 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/ - 404 null null 78.0136ms
+2025-11-02 00:25:34.037 +05:00 [DBG] Connection id "0HNGPFHMMM0NT" received FIN.
+2025-11-02 00:25:34.041 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7288/, Response status code: 404
+2025-11-02 00:25:34.045 +05:00 [DBG] Connection id "0HNGPFHMMM0NT" is closed. The last processed stream ID was 1.
+2025-11-02 00:25:34.047 +05:00 [DBG] Connection id "0HNGPFHMMM0NT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-02 00:25:34.048 +05:00 [DBG] The connection queue processing loop for 0HNGPFHMMM0NT completed.
+2025-11-02 00:25:34.051 +05:00 [DBG] Connection id "0HNGPFHMMM0NT" stopped.
+2025-11-02 00:25:34.145 +05:00 [INF] Received HTTP response headers after 130.6209ms - 200
+2025-11-02 00:25:34.147 +05:00 [INF] End processing HTTP request after 134.6322ms - 200
+2025-11-02 00:26:13.667 +05:00 [DBG] Connection id "0HNGPFHMMM0NU" accepted.
+2025-11-02 00:26:13.672 +05:00 [DBG] Connection id "0HNGPFHMMM0NU" received FIN.
+2025-11-02 00:26:13.676 +05:00 [DBG] Connection id "0HNGPFHMMM0NU" started.
+2025-11-02 00:26:13.677 +05:00 [DBG] Connection id "0HNGPFHMMM0NV" accepted.
+2025-11-02 00:26:13.681 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-02 00:26:13.682 +05:00 [DBG] Connection id "0HNGPFHMMM0NV" started.
+2025-11-02 00:26:13.684 +05:00 [DBG] Connection id "0HNGPFHMMM0NU" stopped.
+2025-11-02 00:26:13.685 +05:00 [DBG] Connection id "0HNGPFHMMM0NU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-02 00:26:13.688 +05:00 [DBG] Connection 0HNGPFHMMM0NV established using the following protocol: "Tls13"
+2025-11-02 00:26:13.693 +05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7288/api/Movies/search?q=afridi - null null
+2025-11-02 00:26:13.698 +05:00 [DBG] 1 candidate(s) found for the request path '/api/Movies/search'
+2025-11-02 00:26:13.699 +05:00 [DBG] Endpoint 'MovieService.Controllers.MoviesController.Search (MovieService)' with route pattern 'api/Movies/search' is valid for the request path '/api/Movies/search'
+2025-11-02 00:26:13.701 +05:00 [DBG] Request matched endpoint 'MovieService.Controllers.MoviesController.Search (MovieService)'
+2025-11-02 00:26:13.704 +05:00 [INF] Executing endpoint 'MovieService.Controllers.MoviesController.Search (MovieService)'
+2025-11-02 00:26:13.722 +05:00 [INF] Route matched with {action = "Search", controller = "Movies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Search(System.String, System.Threading.CancellationToken) on controller MovieService.Controllers.MoviesController (MovieService).
+2025-11-02 00:26:13.725 +05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-02 00:26:13.726 +05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-02 00:26:13.728 +05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-02 00:26:13.730 +05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-02 00:26:13.731 +05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-02 00:26:13.733 +05:00 [DBG] Executing controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:26:13.735 +05:00 [DBG] Executed controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:26:13.746 +05:00 [DBG] Attempting to bind parameter 'q' of type 'System.String' ...
+2025-11-02 00:26:13.748 +05:00 [DBG] Attempting to bind parameter 'q' of type 'System.String' using the name 'q' in request data ...
+2025-11-02 00:26:13.750 +05:00 [DBG] Done attempting to bind parameter 'q' of type 'System.String'.
+2025-11-02 00:26:13.751 +05:00 [DBG] Done attempting to bind parameter 'q' of type 'System.String'.
+2025-11-02 00:26:13.752 +05:00 [DBG] Attempting to validate the bound parameter 'q' of type 'System.String' ...
+2025-11-02 00:26:13.758 +05:00 [DBG] Done attempting to validate the bound parameter 'q' of type 'System.String'.
+2025-11-02 00:26:13.759 +05:00 [DBG] Attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:26:13.761 +05:00 [DBG] Done attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:26:13.762 +05:00 [DBG] Attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:26:13.763 +05:00 [DBG] Done attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:26:13.766 +05:00 [INF] Executing action method MovieService.Controllers.MoviesController.Search (MovieService) - Validation state: "Valid"
+2025-11-02 00:26:13.772 +05:00 [INF] Start processing HTTP request POST https://localhost:7016/api/Auth/validate
+2025-11-02 00:26:13.773 +05:00 [INF] Sending HTTP request POST https://localhost:7016/api/Auth/validate
+2025-11-02 00:26:13.866 +05:00 [INF] Received HTTP response headers after 92.1326ms - 200
+2025-11-02 00:26:13.867 +05:00 [INF] End processing HTTP request after 94.9318ms - 200
+2025-11-02 00:26:13.870 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:26:13.871 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-02 00:26:14.049 +05:00 [INF] Received HTTP response headers after 177.3977ms - 200
+2025-11-02 00:26:14.050 +05:00 [INF] End processing HTTP request after 180.1697ms - 200
+2025-11-02 00:26:14.055 +05:00 [INF] Executed action method MovieService.Controllers.MoviesController.Search (MovieService), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 284.764ms.
+2025-11-02 00:26:14.060 +05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-02 00:26:14.062 +05:00 [DBG] No information found on request to perform content negotiation.
+2025-11-02 00:26:14.063 +05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-02 00:26:14.064 +05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-02 00:26:14.064 +05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-02 00:26:14.065 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MovieService.Models.MovieDto, MovieService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-02 00:26:14.074 +05:00 [INF] Executed action MovieService.Controllers.MoviesController.Search (MovieService) in 339.5207ms
+2025-11-02 00:26:14.075 +05:00 [INF] Executed endpoint 'MovieService.Controllers.MoviesController.Search (MovieService)'
+2025-11-02 00:26:14.077 +05:00 [INF] HTTP GET /api/Movies/search responded 200 in 373.2577 ms
+2025-11-02 00:26:14.080 +05:00 [DBG] Connection id "0HNGPFHMMM0NV" completed keep alive response.
+2025-11-02 00:26:14.085 +05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7288/api/Movies/search?q=afridi - 200 null application/json; charset=utf-8 392.9003ms
+2025-11-02 00:26:45.083 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - application/json 31
+2025-11-02 00:26:45.087 +05:00 [DBG] 1 candidate(s) found for the request path '/api/Movies/bulk'
+2025-11-02 00:26:45.088 +05:00 [DBG] Endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)' with route pattern 'api/Movies/bulk' is valid for the request path '/api/Movies/bulk'
+2025-11-02 00:26:45.089 +05:00 [DBG] Request matched endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:26:45.091 +05:00 [INF] Executing endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:26:45.095 +05:00 [INF] Route matched with {action = "Bulk", controller = "Movies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Bulk(System.Collections.Generic.List`1[System.Int32], System.Threading.CancellationToken) on controller MovieService.Controllers.MoviesController (MovieService).
+2025-11-02 00:26:45.097 +05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-02 00:26:45.097 +05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-02 00:26:45.098 +05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-02 00:26:45.100 +05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-02 00:26:45.100 +05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-02 00:26:45.102 +05:00 [DBG] Executing controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:26:45.103 +05:00 [DBG] Executed controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:26:45.105 +05:00 [DBG] Attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-02 00:26:45.106 +05:00 [DBG] Attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' using the name '' in request data ...
+2025-11-02 00:26:45.108 +05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-02 00:26:45.112 +05:00 [DBG] Connection id "0HNGPFHMMM0NV", Request id "0HNGPFHMMM0NV:00000002": started reading request body.
+2025-11-02 00:26:45.113 +05:00 [DBG] Connection id "0HNGPFHMMM0NV", Request id "0HNGPFHMMM0NV:00000002": done reading request body.
+2025-11-02 00:26:45.116 +05:00 [DBG] JSON input formatter threw an exception: The JSON value could not be converted to System.Collections.Generic.List`1[System.Int32]. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+2025-11-02 00:26:45.117 +05:00 [DBG] Done attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:26:45.118 +05:00 [DBG] Done attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:26:45.119 +05:00 [DBG] Attempting to validate the bound parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-02 00:26:45.121 +05:00 [DBG] Done attempting to validate the bound parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:26:45.122 +05:00 [DBG] Attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:26:45.123 +05:00 [DBG] Done attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:26:45.124 +05:00 [DBG] Attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:26:45.125 +05:00 [DBG] Done attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:26:45.126 +05:00 [DBG] The request has model state errors, returning an error response.
+2025-11-02 00:26:45.127 +05:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-11-02 00:26:45.128 +05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-02 00:26:45.130 +05:00 [DBG] No information found on request to perform content negotiation.
+2025-11-02 00:26:45.130 +05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-11-02 00:26:45.132 +05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-11-02 00:26:45.133 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-02 00:26:45.147 +05:00 [INF] Executed action MovieService.Controllers.MoviesController.Bulk (MovieService) in 45.8425ms
+2025-11-02 00:26:45.149 +05:00 [INF] Executed endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:26:45.150 +05:00 [INF] HTTP POST /api/Movies/bulk responded 400 in 59.1055 ms
+2025-11-02 00:26:45.151 +05:00 [DBG] Connection id "0HNGPFHMMM0NV" completed keep alive response.
+2025-11-02 00:26:45.152 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - 400 null application/problem+json; charset=utf-8 69.2502ms
+2025-11-02 00:26:59.290 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - application/json 31
+2025-11-02 00:26:59.292 +05:00 [DBG] 1 candidate(s) found for the request path '/api/Movies/bulk'
+2025-11-02 00:26:59.293 +05:00 [DBG] Endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)' with route pattern 'api/Movies/bulk' is valid for the request path '/api/Movies/bulk'
+2025-11-02 00:26:59.294 +05:00 [DBG] Request matched endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:26:59.294 +05:00 [INF] Executing endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:26:59.295 +05:00 [INF] Route matched with {action = "Bulk", controller = "Movies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Bulk(System.Collections.Generic.List`1[System.Int32], System.Threading.CancellationToken) on controller MovieService.Controllers.MoviesController (MovieService).
+2025-11-02 00:26:59.296 +05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-02 00:26:59.297 +05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-02 00:26:59.298 +05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-02 00:26:59.299 +05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-02 00:26:59.300 +05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-02 00:26:59.301 +05:00 [DBG] Executing controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:26:59.302 +05:00 [DBG] Executed controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:26:59.303 +05:00 [DBG] Attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-02 00:26:59.304 +05:00 [DBG] Attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' using the name '' in request data ...
+2025-11-02 00:26:59.305 +05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-02 00:26:59.306 +05:00 [DBG] Connection id "0HNGPFHMMM0NV", Request id "0HNGPFHMMM0NV:00000003": started reading request body.
+2025-11-02 00:26:59.306 +05:00 [DBG] Connection id "0HNGPFHMMM0NV", Request id "0HNGPFHMMM0NV:00000003": done reading request body.
+2025-11-02 00:26:59.308 +05:00 [DBG] JSON input formatter threw an exception: The JSON value could not be converted to System.Collections.Generic.List`1[System.Int32]. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+2025-11-02 00:26:59.309 +05:00 [DBG] Done attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:26:59.310 +05:00 [DBG] Done attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:26:59.310 +05:00 [DBG] Attempting to validate the bound parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-02 00:26:59.311 +05:00 [DBG] Done attempting to validate the bound parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:26:59.312 +05:00 [DBG] Attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:26:59.313 +05:00 [DBG] Done attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:26:59.313 +05:00 [DBG] Attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:26:59.314 +05:00 [DBG] Done attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:26:59.315 +05:00 [DBG] The request has model state errors, returning an error response.
+2025-11-02 00:26:59.316 +05:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-11-02 00:26:59.316 +05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-02 00:26:59.318 +05:00 [DBG] No information found on request to perform content negotiation.
+2025-11-02 00:26:59.318 +05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-11-02 00:26:59.320 +05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-11-02 00:26:59.321 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-02 00:26:59.322 +05:00 [INF] Executed action MovieService.Controllers.MoviesController.Bulk (MovieService) in 20.701ms
+2025-11-02 00:26:59.323 +05:00 [INF] Executed endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:26:59.323 +05:00 [INF] HTTP POST /api/Movies/bulk responded 400 in 29.1326 ms
+2025-11-02 00:26:59.325 +05:00 [DBG] Connection id "0HNGPFHMMM0NV" completed keep alive response.
+2025-11-02 00:26:59.325 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - 400 null application/problem+json; charset=utf-8 35.652ms
+2025-11-02 00:27:06.212 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - application/json 16
+2025-11-02 00:27:06.215 +05:00 [DBG] 1 candidate(s) found for the request path '/api/Movies/bulk'
+2025-11-02 00:27:06.215 +05:00 [DBG] Endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)' with route pattern 'api/Movies/bulk' is valid for the request path '/api/Movies/bulk'
+2025-11-02 00:27:06.216 +05:00 [DBG] Request matched endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:27:06.217 +05:00 [INF] Executing endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:27:06.218 +05:00 [INF] Route matched with {action = "Bulk", controller = "Movies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Bulk(System.Collections.Generic.List`1[System.Int32], System.Threading.CancellationToken) on controller MovieService.Controllers.MoviesController (MovieService).
+2025-11-02 00:27:06.219 +05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-02 00:27:06.220 +05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-02 00:27:06.221 +05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-02 00:27:06.222 +05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-02 00:27:06.223 +05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-02 00:27:06.224 +05:00 [DBG] Executing controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:27:06.225 +05:00 [DBG] Executed controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:27:06.226 +05:00 [DBG] Attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-02 00:27:06.227 +05:00 [DBG] Attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' using the name '' in request data ...
+2025-11-02 00:27:06.228 +05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-02 00:27:06.228 +05:00 [DBG] Connection id "0HNGPFHMMM0NV", Request id "0HNGPFHMMM0NV:00000004": started reading request body.
+2025-11-02 00:27:06.229 +05:00 [DBG] Connection id "0HNGPFHMMM0NV", Request id "0HNGPFHMMM0NV:00000004": done reading request body.
+2025-11-02 00:27:06.237 +05:00 [DBG] JSON input formatter succeeded, deserializing to type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'
+2025-11-02 00:27:06.238 +05:00 [DBG] Done attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:27:06.239 +05:00 [DBG] Done attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:27:06.240 +05:00 [DBG] Attempting to validate the bound parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-02 00:27:06.243 +05:00 [DBG] Done attempting to validate the bound parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:27:06.244 +05:00 [DBG] Attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:27:06.244 +05:00 [DBG] Done attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:27:06.245 +05:00 [DBG] Attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:27:06.246 +05:00 [DBG] Done attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:27:06.247 +05:00 [INF] Executing action method MovieService.Controllers.MoviesController.Bulk (MovieService) - Validation state: "Valid"
+2025-11-02 00:27:06.248 +05:00 [INF] Executed action method MovieService.Controllers.MoviesController.Bulk (MovieService), returned result Microsoft.AspNetCore.Mvc.UnauthorizedObjectResult in 0.7201ms.
+2025-11-02 00:27:06.249 +05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-02 00:27:06.251 +05:00 [DBG] No information found on request to perform content negotiation.
+2025-11-02 00:27:06.251 +05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-02 00:27:06.252 +05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-02 00:27:06.252 +05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-11-02 00:27:06.253 +05:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-11-02 00:27:06.255 +05:00 [INF] Executed action MovieService.Controllers.MoviesController.Bulk (MovieService) in 30.5618ms
+2025-11-02 00:27:06.256 +05:00 [INF] Executed endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:27:06.256 +05:00 [INF] HTTP POST /api/Movies/bulk responded 401 in 39.1314 ms
+2025-11-02 00:27:06.258 +05:00 [DBG] Connection id "0HNGPFHMMM0NV" completed keep alive response.
+2025-11-02 00:27:06.258 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - 401 null text/plain; charset=utf-8 46.2151ms
+2025-11-02 00:27:32.858 +05:00 [DBG] HttpMessageHandler expired after 120000ms for client 'tmdb'
+2025-11-02 00:27:37.281 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - application/json 16
+2025-11-02 00:27:37.283 +05:00 [DBG] 1 candidate(s) found for the request path '/api/Movies/bulk'
+2025-11-02 00:27:37.284 +05:00 [DBG] Endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)' with route pattern 'api/Movies/bulk' is valid for the request path '/api/Movies/bulk'
+2025-11-02 00:27:37.285 +05:00 [DBG] Request matched endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:27:37.286 +05:00 [INF] Executing endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:27:37.287 +05:00 [INF] Route matched with {action = "Bulk", controller = "Movies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Bulk(System.Collections.Generic.List`1[System.Int32], System.Threading.CancellationToken) on controller MovieService.Controllers.MoviesController (MovieService).
+2025-11-02 00:27:37.288 +05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-02 00:27:37.289 +05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-02 00:27:37.290 +05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-02 00:27:37.291 +05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-02 00:27:37.292 +05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-02 00:27:37.293 +05:00 [DBG] Executing controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:27:37.294 +05:00 [DBG] Executed controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:27:37.295 +05:00 [DBG] Attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-02 00:27:37.296 +05:00 [DBG] Attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' using the name '' in request data ...
+2025-11-02 00:27:37.297 +05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-02 00:27:37.298 +05:00 [DBG] Connection id "0HNGPFHMMM0NV", Request id "0HNGPFHMMM0NV:00000005": started reading request body.
+2025-11-02 00:27:37.299 +05:00 [DBG] Connection id "0HNGPFHMMM0NV", Request id "0HNGPFHMMM0NV:00000005": done reading request body.
+2025-11-02 00:27:37.300 +05:00 [DBG] JSON input formatter succeeded, deserializing to type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'
+2025-11-02 00:27:37.300 +05:00 [DBG] Done attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:27:37.302 +05:00 [DBG] Done attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:27:37.303 +05:00 [DBG] Attempting to validate the bound parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-02 00:27:37.304 +05:00 [DBG] Done attempting to validate the bound parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:27:37.305 +05:00 [DBG] Attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:27:37.306 +05:00 [DBG] Done attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:27:37.307 +05:00 [DBG] Attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:27:37.308 +05:00 [DBG] Done attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:27:37.309 +05:00 [INF] Executing action method MovieService.Controllers.MoviesController.Bulk (MovieService) - Validation state: "Valid"
+2025-11-02 00:27:37.311 +05:00 [INF] Start processing HTTP request POST https://localhost:7016/api/Auth/validate
+2025-11-02 00:27:37.311 +05:00 [INF] Sending HTTP request POST https://localhost:7016/api/Auth/validate
+2025-11-02 00:27:37.326 +05:00 [INF] Received HTTP response headers after 14.0897ms - 200
+2025-11-02 00:27:37.327 +05:00 [INF] End processing HTTP request after 16.4194ms - 200
+2025-11-02 00:27:37.332 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/movie/1
+2025-11-02 00:27:37.333 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/movie/1
+2025-11-02 00:27:37.335 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/movie/100
+2025-11-02 00:27:37.336 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/movie/100
+2025-11-02 00:27:37.337 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/movie/2910
+2025-11-02 00:27:37.338 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/movie/2910
+2025-11-02 00:27:37.988 +05:00 [INF] Received HTTP response headers after 650.1139ms - 404
+2025-11-02 00:27:37.989 +05:00 [INF] End processing HTTP request after 652.6021ms - 404
+2025-11-02 00:27:37.990 +05:00 [WRN] TMDB get movie 2910 failed: "NotFound"
+2025-11-02 00:27:37.997 +05:00 [INF] Received HTTP response headers after 663.5303ms - 404
+2025-11-02 00:27:37.998 +05:00 [INF] End processing HTTP request after 666.1613ms - 404
+2025-11-02 00:27:37.999 +05:00 [WRN] TMDB get movie 1 failed: "NotFound"
+2025-11-02 00:27:38.061 +05:00 [INF] Received HTTP response headers after 724.3072ms - 200
+2025-11-02 00:27:38.062 +05:00 [INF] End processing HTTP request after 726.9003ms - 200
+2025-11-02 00:27:38.064 +05:00 [INF] Executed action method MovieService.Controllers.MoviesController.Bulk (MovieService), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 753.1991ms.
+2025-11-02 00:27:38.065 +05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-02 00:27:38.066 +05:00 [DBG] No information found on request to perform content negotiation.
+2025-11-02 00:27:38.067 +05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-02 00:27:38.067 +05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-02 00:27:38.068 +05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-02 00:27:38.069 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ArrayWhereSelectIterator`2[[MovieService.Models.MovieDto, MovieService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[MovieService.Models.MovieDto, MovieService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-02 00:27:38.071 +05:00 [INF] Executed action MovieService.Controllers.MoviesController.Bulk (MovieService) in 777.5326ms
+2025-11-02 00:27:38.072 +05:00 [INF] Executed endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:27:38.072 +05:00 [INF] HTTP POST /api/Movies/bulk responded 200 in 786.1092 ms
+2025-11-02 00:27:38.074 +05:00 [DBG] Connection id "0HNGPFHMMM0NV" completed keep alive response.
+2025-11-02 00:27:38.074 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - 200 null application/json; charset=utf-8 793.3715ms
+2025-11-02 00:27:42.869 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:27:42.872 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0483ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:27:52.879 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:27:52.880 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0042ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:27:57.418 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - application/json 18
+2025-11-02 00:27:57.420 +05:00 [DBG] 1 candidate(s) found for the request path '/api/Movies/bulk'
+2025-11-02 00:27:57.422 +05:00 [DBG] Endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)' with route pattern 'api/Movies/bulk' is valid for the request path '/api/Movies/bulk'
+2025-11-02 00:27:57.423 +05:00 [DBG] Request matched endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:27:57.425 +05:00 [INF] Executing endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:27:57.425 +05:00 [INF] Route matched with {action = "Bulk", controller = "Movies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Bulk(System.Collections.Generic.List`1[System.Int32], System.Threading.CancellationToken) on controller MovieService.Controllers.MoviesController (MovieService).
+2025-11-02 00:27:57.426 +05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-02 00:27:57.427 +05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-02 00:27:57.428 +05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-02 00:27:57.430 +05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-02 00:27:57.431 +05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-02 00:27:57.432 +05:00 [DBG] Executing controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:27:57.433 +05:00 [DBG] Executed controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:27:57.434 +05:00 [DBG] Attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-02 00:27:57.435 +05:00 [DBG] Attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' using the name '' in request data ...
+2025-11-02 00:27:57.436 +05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-02 00:27:57.438 +05:00 [DBG] Connection id "0HNGPFHMMM0NV", Request id "0HNGPFHMMM0NV:00000006": started reading request body.
+2025-11-02 00:27:57.439 +05:00 [DBG] Connection id "0HNGPFHMMM0NV", Request id "0HNGPFHMMM0NV:00000006": done reading request body.
+2025-11-02 00:27:57.441 +05:00 [DBG] JSON input formatter succeeded, deserializing to type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'
+2025-11-02 00:27:57.442 +05:00 [DBG] Done attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:27:57.444 +05:00 [DBG] Done attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:27:57.445 +05:00 [DBG] Attempting to validate the bound parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-02 00:27:57.447 +05:00 [DBG] Done attempting to validate the bound parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:27:57.450 +05:00 [DBG] Attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:27:57.451 +05:00 [DBG] Done attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:27:57.452 +05:00 [DBG] Attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:27:57.453 +05:00 [DBG] Done attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:27:57.454 +05:00 [INF] Executing action method MovieService.Controllers.MoviesController.Bulk (MovieService) - Validation state: "Valid"
+2025-11-02 00:27:57.456 +05:00 [INF] Start processing HTTP request POST https://localhost:7016/api/Auth/validate
+2025-11-02 00:27:57.457 +05:00 [INF] Sending HTTP request POST https://localhost:7016/api/Auth/validate
+2025-11-02 00:27:57.517 +05:00 [INF] Received HTTP response headers after 58.9833ms - 200
+2025-11-02 00:27:57.518 +05:00 [INF] End processing HTTP request after 61.8183ms - 200
+2025-11-02 00:27:57.524 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/movie/111
+2025-11-02 00:27:57.525 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/movie/111
+2025-11-02 00:27:57.526 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/movie/2910
+2025-11-02 00:27:57.527 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/movie/2910
+2025-11-02 00:27:57.761 +05:00 [INF] Received HTTP response headers after 233.3651ms - 404
+2025-11-02 00:27:57.762 +05:00 [INF] Received HTTP response headers after 236.1521ms - 200
+2025-11-02 00:27:57.763 +05:00 [INF] End processing HTTP request after 236.439ms - 404
+2025-11-02 00:27:57.763 +05:00 [INF] End processing HTTP request after 239.1901ms - 200
+2025-11-02 00:27:57.764 +05:00 [WRN] TMDB get movie 2910 failed: "NotFound"
+2025-11-02 00:27:57.766 +05:00 [INF] Executed action method MovieService.Controllers.MoviesController.Bulk (MovieService), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 310.3246ms.
+2025-11-02 00:27:57.767 +05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-02 00:27:57.769 +05:00 [DBG] No information found on request to perform content negotiation.
+2025-11-02 00:27:57.769 +05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-02 00:27:57.770 +05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-02 00:27:57.770 +05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-02 00:27:57.771 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ArrayWhereSelectIterator`2[[MovieService.Models.MovieDto, MovieService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[MovieService.Models.MovieDto, MovieService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-02 00:27:57.772 +05:00 [INF] Executed action MovieService.Controllers.MoviesController.Bulk (MovieService) in 340.4355ms
+2025-11-02 00:27:57.773 +05:00 [INF] Executed endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:27:57.774 +05:00 [INF] HTTP POST /api/Movies/bulk responded 200 in 349.6319 ms
+2025-11-02 00:27:57.775 +05:00 [DBG] Connection id "0HNGPFHMMM0NV" completed keep alive response.
+2025-11-02 00:27:57.776 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - 200 null application/json; charset=utf-8 358.4583ms
+2025-11-02 00:28:02.894 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:28:02.896 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0032ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:28:07.500 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - application/json 17
+2025-11-02 00:28:07.502 +05:00 [DBG] 1 candidate(s) found for the request path '/api/Movies/bulk'
+2025-11-02 00:28:07.504 +05:00 [DBG] Endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)' with route pattern 'api/Movies/bulk' is valid for the request path '/api/Movies/bulk'
+2025-11-02 00:28:07.505 +05:00 [DBG] Request matched endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:28:07.507 +05:00 [INF] Executing endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:28:07.508 +05:00 [INF] Route matched with {action = "Bulk", controller = "Movies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Bulk(System.Collections.Generic.List`1[System.Int32], System.Threading.CancellationToken) on controller MovieService.Controllers.MoviesController (MovieService).
+2025-11-02 00:28:07.510 +05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-02 00:28:07.511 +05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-02 00:28:07.513 +05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-02 00:28:07.514 +05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-02 00:28:07.516 +05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-02 00:28:07.517 +05:00 [DBG] Executing controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:28:07.519 +05:00 [DBG] Executed controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:28:07.520 +05:00 [DBG] Attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-02 00:28:07.522 +05:00 [DBG] Attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' using the name '' in request data ...
+2025-11-02 00:28:07.523 +05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-02 00:28:07.524 +05:00 [DBG] Connection id "0HNGPFHMMM0NV", Request id "0HNGPFHMMM0NV:00000007": started reading request body.
+2025-11-02 00:28:07.526 +05:00 [DBG] Connection id "0HNGPFHMMM0NV", Request id "0HNGPFHMMM0NV:00000007": done reading request body.
+2025-11-02 00:28:07.527 +05:00 [DBG] JSON input formatter succeeded, deserializing to type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'
+2025-11-02 00:28:07.528 +05:00 [DBG] Done attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:28:07.529 +05:00 [DBG] Done attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:28:07.530 +05:00 [DBG] Attempting to validate the bound parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-02 00:28:07.532 +05:00 [DBG] Done attempting to validate the bound parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:28:07.533 +05:00 [DBG] Attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:28:07.534 +05:00 [DBG] Done attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:28:07.536 +05:00 [DBG] Attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:28:07.537 +05:00 [DBG] Done attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:28:07.538 +05:00 [INF] Executing action method MovieService.Controllers.MoviesController.Bulk (MovieService) - Validation state: "Valid"
+2025-11-02 00:28:07.540 +05:00 [INF] Start processing HTTP request POST https://localhost:7016/api/Auth/validate
+2025-11-02 00:28:07.541 +05:00 [INF] Sending HTTP request POST https://localhost:7016/api/Auth/validate
+2025-11-02 00:28:07.545 +05:00 [INF] Received HTTP response headers after 2.8921ms - 200
+2025-11-02 00:28:07.546 +05:00 [INF] End processing HTTP request after 6.3444ms - 200
+2025-11-02 00:28:07.547 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/movie/291
+2025-11-02 00:28:07.548 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/movie/291
+2025-11-02 00:28:07.783 +05:00 [INF] Received HTTP response headers after 234.0073ms - 200
+2025-11-02 00:28:07.784 +05:00 [INF] End processing HTTP request after 236.7321ms - 200
+2025-11-02 00:28:07.785 +05:00 [INF] Executed action method MovieService.Controllers.MoviesController.Bulk (MovieService), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 245.7498ms.
+2025-11-02 00:28:07.787 +05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-02 00:28:07.788 +05:00 [DBG] No information found on request to perform content negotiation.
+2025-11-02 00:28:07.789 +05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-02 00:28:07.789 +05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-02 00:28:07.790 +05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-02 00:28:07.790 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ArrayWhereSelectIterator`2[[MovieService.Models.MovieDto, MovieService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[MovieService.Models.MovieDto, MovieService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-02 00:28:07.791 +05:00 [INF] Executed action MovieService.Controllers.MoviesController.Bulk (MovieService) in 274.1882ms
+2025-11-02 00:28:07.792 +05:00 [INF] Executed endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:28:07.793 +05:00 [INF] HTTP POST /api/Movies/bulk responded 200 in 286.4658 ms
+2025-11-02 00:28:07.794 +05:00 [DBG] Connection id "0HNGPFHMMM0NV" completed keep alive response.
+2025-11-02 00:28:07.795 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - 200 null application/json; charset=utf-8 295.4067ms
+2025-11-02 00:28:12.897 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-11-02 00:28:12.898 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0038ms - processed: 0 items - remaining: 1 items
+2025-11-02 00:28:13.769 +05:00 [DBG] HttpMessageHandler expired after 120000ms for client 'auth'
+2025-11-02 00:28:17.335 +05:00 [DBG] Connection id "0HNGPFHMMM0NV" received FIN.
+2025-11-02 00:28:17.337 +05:00 [DBG] Connection id "0HNGPFHMMM0NV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-02 00:28:17.387 +05:00 [DBG] Connection id "0HNGPFHMMM0NV" disconnecting.
+2025-11-02 00:28:17.403 +05:00 [DBG] Connection id "0HNGPFHMMM0NV" stopped.
+2025-11-02 00:28:22.914 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-11-02 00:28:22.915 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0033ms - processed: 0 items - remaining: 2 items
+2025-11-02 00:28:32.923 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-11-02 00:28:32.925 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0035ms - processed: 0 items - remaining: 2 items
+2025-11-02 00:28:39.487 +05:00 [DBG] Connection id "0HNGPFHMMM0O0" accepted.
+2025-11-02 00:28:39.493 +05:00 [DBG] Connection id "0HNGPFHMMM0O0" received FIN.
+2025-11-02 00:28:39.496 +05:00 [DBG] Connection id "0HNGPFHMMM0O0" started.
+2025-11-02 00:28:39.496 +05:00 [DBG] Connection id "0HNGPFHMMM0O1" accepted.
+2025-11-02 00:28:39.502 +05:00 [DBG] Connection id "0HNGPFHMMM0O1" started.
+2025-11-02 00:28:39.502 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-02 00:28:39.505 +05:00 [DBG] Connection id "0HNGPFHMMM0O0" stopped.
+2025-11-02 00:28:39.505 +05:00 [DBG] Connection id "0HNGPFHMMM0O0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-02 00:28:39.507 +05:00 [DBG] Connection 0HNGPFHMMM0O1 established using the following protocol: "Tls13"
+2025-11-02 00:28:39.508 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - application/json 17
+2025-11-02 00:28:39.510 +05:00 [DBG] 1 candidate(s) found for the request path '/api/Movies/bulk'
+2025-11-02 00:28:39.511 +05:00 [DBG] Endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)' with route pattern 'api/Movies/bulk' is valid for the request path '/api/Movies/bulk'
+2025-11-02 00:28:39.512 +05:00 [DBG] Request matched endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:28:39.513 +05:00 [INF] Executing endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:28:39.513 +05:00 [INF] Route matched with {action = "Bulk", controller = "Movies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Bulk(System.Collections.Generic.List`1[System.Int32], System.Threading.CancellationToken) on controller MovieService.Controllers.MoviesController (MovieService).
+2025-11-02 00:28:39.514 +05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-02 00:28:39.516 +05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-02 00:28:39.517 +05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-02 00:28:39.518 +05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-02 00:28:39.519 +05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-02 00:28:39.520 +05:00 [DBG] Executing controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:28:39.521 +05:00 [DBG] Executed controller factory for controller MovieService.Controllers.MoviesController (MovieService)
+2025-11-02 00:28:39.522 +05:00 [DBG] Attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-02 00:28:39.523 +05:00 [DBG] Attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' using the name '' in request data ...
+2025-11-02 00:28:39.524 +05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-02 00:28:39.525 +05:00 [DBG] Connection id "0HNGPFHMMM0O1", Request id "0HNGPFHMMM0O1:00000001": started reading request body.
+2025-11-02 00:28:39.525 +05:00 [DBG] Connection id "0HNGPFHMMM0O1", Request id "0HNGPFHMMM0O1:00000001": done reading request body.
+2025-11-02 00:28:39.526 +05:00 [DBG] JSON input formatter succeeded, deserializing to type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'
+2025-11-02 00:28:39.527 +05:00 [DBG] Done attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:28:39.528 +05:00 [DBG] Done attempting to bind parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:28:39.528 +05:00 [DBG] Attempting to validate the bound parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-02 00:28:39.529 +05:00 [DBG] Done attempting to validate the bound parameter 'ids' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-02 00:28:39.530 +05:00 [DBG] Attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:28:39.531 +05:00 [DBG] Done attempting to bind parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:28:39.532 +05:00 [DBG] Attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken' ...
+2025-11-02 00:28:39.533 +05:00 [DBG] Done attempting to validate the bound parameter 'ct' of type 'System.Threading.CancellationToken'.
+2025-11-02 00:28:39.533 +05:00 [INF] Executing action method MovieService.Controllers.MoviesController.Bulk (MovieService) - Validation state: "Valid"
+2025-11-02 00:28:39.534 +05:00 [INF] Start processing HTTP request POST https://localhost:7016/api/Auth/validate
+2025-11-02 00:28:39.535 +05:00 [INF] Sending HTTP request POST https://localhost:7016/api/Auth/validate
+2025-11-02 00:28:39.552 +05:00 [INF] Received HTTP response headers after 16.4258ms - 200
+2025-11-02 00:28:39.553 +05:00 [INF] End processing HTTP request after 18.6224ms - 200
+2025-11-02 00:28:39.554 +05:00 [INF] Executed action method MovieService.Controllers.MoviesController.Bulk (MovieService), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.7135ms.
+2025-11-02 00:28:39.555 +05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-02 00:28:39.556 +05:00 [DBG] No information found on request to perform content negotiation.
+2025-11-02 00:28:39.557 +05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-02 00:28:39.557 +05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-02 00:28:39.558 +05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-02 00:28:39.559 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ArrayWhereSelectIterator`2[[MovieService.Models.MovieDto, MovieService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[MovieService.Models.MovieDto, MovieService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-02 00:28:39.560 +05:00 [INF] Executed action MovieService.Controllers.MoviesController.Bulk (MovieService) in 40.0301ms
+2025-11-02 00:28:39.560 +05:00 [INF] Executed endpoint 'MovieService.Controllers.MoviesController.Bulk (MovieService)'
+2025-11-02 00:28:39.561 +05:00 [INF] HTTP POST /api/Movies/bulk responded 200 in 48.5859 ms
+2025-11-02 00:28:39.563 +05:00 [DBG] Connection id "0HNGPFHMMM0O1" completed keep alive response.
+2025-11-02 00:28:39.563 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7288/api/Movies/bulk - 200 null application/json; charset=utf-8 55.4379ms
+2025-11-02 00:28:42.937 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-11-02 00:28:42.939 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0133ms - processed: 0 items - remaining: 2 items
+2025-11-02 00:28:46.286 +05:00 [DBG] Connection id "0HNGPFHMMM0O1" received FIN.
+2025-11-02 00:28:46.288 +05:00 [DBG] Connection id "0HNGPFHMMM0O1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-02 00:28:46.289 +05:00 [DBG] Connection id "0HNGPFHMMM0O1" disconnecting.
+2025-11-02 00:28:46.291 +05:00 [DBG] Connection id "0HNGPFHMMM0O1" stopped.
+2025-11-02 00:28:52.948 +05:00 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-11-02 00:28:52.950 +05:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0033ms - processed: 0 items - remaining: 2 items

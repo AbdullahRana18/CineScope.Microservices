@@ -1,6 +1,5 @@
 <Solution>
   <Project Path="D:/ASPNET/PNDCProject/MovieService/MovieService/MovieService.csproj" />
-  <Project Path="D:/ASPNET/PNDCProject/PaymentService/PaymentService/PaymentService.csproj" />
   <Project Path="D:/ASPNET/PNDCProject/PNDCProject/AuthService/AuthService.csproj" />
   <Project Path="D:/ASPNET/PNDCProject/Shared/Shared/Shared.csproj" />
 </Solution>

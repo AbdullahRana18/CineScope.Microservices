@@ -17,16 +17,6 @@
   },
   {
     "ContainingType": "AuthService.Controllers.AuthController",
-    "Method": "Protected",
-    "RelativePath": "api/Auth/protected",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AuthService.Controllers.AuthController",
     "Method": "Register",
     "RelativePath": "api/Auth/register",
     "HttpMethod": "POST",
@@ -36,6 +26,22 @@
       {
         "Name": "user",
         "Type": "AuthService.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthService.Controllers.AuthController",
+    "Method": "ValidateToken",
+    "RelativePath": "api/Auth/validate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "AuthService.Controllers.AuthController\u002BTokenRequest",
         "IsRequired": true
       }
     ],
