@@ -7,11 +7,14 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Database connection
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// JWT service
 builder.Services.AddSingleton<JwtService>();
 
+// JWT authentication setup
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -37,12 +40,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// 🆕 NEW — Allow MovieService to call AuthService for validation
+// CORS policy for MovieService
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowMovieService", policy =>
     {
-        policy.WithOrigins("https://localhost:7288") // MovieService URL
+        policy.WithOrigins("https://localhost:7288")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -58,7 +61,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
-app.UseCors("AllowMovieService"); // 🆕 NEW
+app.UseCors("AllowMovieService");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

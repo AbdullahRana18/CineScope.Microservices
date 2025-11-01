@@ -3,6 +3,7 @@ using AuthService.Models;
 
 namespace AuthService.Data
 {
+    // Database context class
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
@@ -10,6 +11,7 @@ namespace AuthService.Data
         {
         }
 
+        // Users table
         public DbSet<User> Users { get; set; }
     }
 }
