@@ -72,6 +72,11 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.MapGet("/", context =>
+    {
+    context.Response.Redirect("/swagger/index.html");
+    return Task.CompletedTask;
+    });
 }
 
 // Log every request

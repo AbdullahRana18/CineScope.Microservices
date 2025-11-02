@@ -143,3 +143,515 @@
 2025-11-03 00:00:50.054 +05:00 [DBG] Connection id "0HNGQ87J9F32Q" disconnecting.
 2025-11-03 00:00:50.068 +05:00 [DBG] Connection id "0HNGQ87J9F32Q" sending FIN because: "The Socket transport's send loop completed gracefully."
 2025-11-03 00:00:50.079 +05:00 [DBG] Connection id "0HNGQ87J9F32Q" stopped.
+2025-11-03 00:17:30.480 +05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-03 00:17:30.629 +05:00 [DBG] Hosting starting
+2025-11-03 00:17:30.685 +05:00 [INF] CacheWarmupWorker started
+2025-11-03 00:17:30.721 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:17:30.725 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:17:30.823 +05:00 [DBG] Middleware loaded
+2025-11-03 00:17:30.826 +05:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16509 B).
+2025-11-03 00:17:30.828 +05:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-03 00:17:30.947 +05:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-11-03 00:17:30.950 +05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-03 00:17:30.954 +05:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-03 00:17:31.083 +05:00 [INF] Now listening on: https://localhost:7288
+2025-11-03 00:17:31.085 +05:00 [INF] Now listening on: http://localhost:5198
+2025-11-03 00:17:31.086 +05:00 [DBG] Loaded hosting startup assembly MovieService
+2025-11-03 00:17:31.087 +05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-03 00:17:31.088 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-03 00:17:31.089 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-03 00:17:31.101 +05:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-03 00:17:31.108 +05:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-03 00:17:31.212 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-03 00:17:31.214 +05:00 [INF] Hosting environment: Development
+2025-11-03 00:17:31.215 +05:00 [INF] Content root path: D:\ASPNET\PNDCProject\MovieService\MovieService
+2025-11-03 00:17:31.217 +05:00 [DBG] Hosting started
+2025-11-03 00:17:31.371 +05:00 [DBG] Connection id "0HNGQ8HS6QE02" accepted.
+2025-11-03 00:17:31.380 +05:00 [DBG] Connection id "0HNGQ8HS6QE02" started.
+2025-11-03 00:17:31.384 +05:00 [DBG] Connection id "0HNGQ8HS6QE03" received FIN.
+2025-11-03 00:17:31.384 +05:00 [DBG] Connection id "0HNGQ8HS6QE02" received FIN.
+2025-11-03 00:17:31.423 +05:00 [DBG] Connection id "0HNGQ8HS6QE03" accepted.
+2025-11-03 00:17:31.465 +05:00 [DBG] Connection id "0HNGQ8HS6QE03" started.
+2025-11-03 00:17:31.467 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-03 00:17:31.472 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-03 00:17:31.533 +05:00 [INF] Received HTTP response headers after 801.9391ms - 200
+2025-11-03 00:17:31.541 +05:00 [DBG] Connection id "0HNGQ8HS6QE02" stopped.
+2025-11-03 00:17:31.547 +05:00 [DBG] Connection id "0HNGQ8HS6QE03" stopped.
+2025-11-03 00:17:31.557 +05:00 [INF] End processing HTTP request after 839.1591ms - 200
+2025-11-03 00:17:31.561 +05:00 [DBG] Connection id "0HNGQ8HS6QE02" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:17:31.561 +05:00 [DBG] Connection id "0HNGQ8HS6QE03" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:17:31.586 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:17:31.645 +05:00 [DBG] Connection id "0HNGQ8HS6QE04" accepted.
+2025-11-03 00:17:31.649 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:17:31.650 +05:00 [DBG] Connection id "0HNGQ8HS6QE04" started.
+2025-11-03 00:17:31.684 +05:00 [DBG] Connection 0HNGQ8HS6QE04 established using the following protocol: "Tls13"
+2025-11-03 00:17:31.752 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/index.html - null null
+2025-11-03 00:17:31.808 +05:00 [DBG] No candidates found for the request path '/index.html'
+2025-11-03 00:17:31.809 +05:00 [DBG] Request did not match any endpoints
+2025-11-03 00:17:31.851 +05:00 [INF] Received HTTP response headers after 198.178ms - 200
+2025-11-03 00:17:31.852 +05:00 [INF] End processing HTTP request after 265.8395ms - 200
+2025-11-03 00:17:31.853 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:17:31.854 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:17:31.855 +05:00 [INF] HTTP GET /index.html responded 404 in 1.9249 ms
+2025-11-03 00:17:31.862 +05:00 [DBG] Connection id "0HNGQ8HS6QE04" received FIN.
+2025-11-03 00:17:31.862 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/index.html - 404 null null 118.7644ms
+2025-11-03 00:17:31.867 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7288/index.html, Response status code: 404
+2025-11-03 00:17:31.867 +05:00 [DBG] Connection id "0HNGQ8HS6QE04" is closed. The last processed stream ID was 1.
+2025-11-03 00:17:31.871 +05:00 [DBG] Connection id "0HNGQ8HS6QE04" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:17:31.874 +05:00 [DBG] The connection queue processing loop for 0HNGQ8HS6QE04 completed.
+2025-11-03 00:17:31.877 +05:00 [DBG] Connection id "0HNGQ8HS6QE04" stopped.
+2025-11-03 00:17:31.986 +05:00 [INF] Received HTTP response headers after 130.8744ms - 200
+2025-11-03 00:17:31.987 +05:00 [INF] End processing HTTP request after 133.9525ms - 200
+2025-11-03 00:17:47.989 +05:00 [DBG] Connection id "0HNGQ8HS6QE05" accepted.
+2025-11-03 00:17:47.991 +05:00 [DBG] Connection id "0HNGQ8HS6QE05" started.
+2025-11-03 00:17:47.998 +05:00 [DBG] Connection 0HNGQ8HS6QE05 established using the following protocol: "Tls13"
+2025-11-03 00:17:48.001 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-03 00:17:48.014 +05:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-11-03 00:17:48.016 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 15.7601ms
+2025-11-03 00:17:48.043 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/_vs/browserLink - null null
+2025-11-03 00:17:48.085 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.1181ms
+2025-11-03 00:17:48.160 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/swagger/v1/swagger.json - null null
+2025-11-03 00:17:48.165 +05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-03 00:17:48.166 +05:00 [DBG] Request did not match any endpoints
+2025-11-03 00:17:48.175 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.6773ms
+2025-11-03 00:18:28.096 +05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-03 00:18:28.251 +05:00 [DBG] Hosting starting
+2025-11-03 00:18:28.313 +05:00 [INF] CacheWarmupWorker started
+2025-11-03 00:18:28.348 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:18:28.352 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:18:28.452 +05:00 [DBG] Middleware loaded
+2025-11-03 00:18:28.459 +05:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16509 B).
+2025-11-03 00:18:28.462 +05:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-03 00:18:28.571 +05:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-11-03 00:18:28.574 +05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-03 00:18:28.578 +05:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-03 00:18:28.729 +05:00 [INF] Now listening on: https://localhost:7288
+2025-11-03 00:18:28.827 +05:00 [INF] Now listening on: http://localhost:5198
+2025-11-03 00:18:28.845 +05:00 [DBG] Loaded hosting startup assembly MovieService
+2025-11-03 00:18:28.847 +05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-03 00:18:28.848 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-03 00:18:28.850 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-03 00:18:28.861 +05:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-03 00:18:28.868 +05:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-03 00:18:29.014 +05:00 [DBG] Connection id "0HNGQ8IDCHOB1" received FIN.
+2025-11-03 00:18:29.027 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-03 00:18:29.078 +05:00 [INF] Hosting environment: Development
+2025-11-03 00:18:29.090 +05:00 [INF] Content root path: D:\ASPNET\PNDCProject\MovieService\MovieService
+2025-11-03 00:18:29.082 +05:00 [DBG] Connection id "0HNGQ8IDCHOB1" accepted.
+2025-11-03 00:18:29.014 +05:00 [DBG] Connection id "0HNGQ8IDCHOB2" received FIN.
+2025-11-03 00:18:29.100 +05:00 [INF] Received HTTP response headers after 741.8185ms - 200
+2025-11-03 00:18:29.104 +05:00 [DBG] Hosting started
+2025-11-03 00:18:29.125 +05:00 [DBG] Connection id "0HNGQ8IDCHOB1" started.
+2025-11-03 00:18:29.129 +05:00 [DBG] Connection id "0HNGQ8IDCHOB2" accepted.
+2025-11-03 00:18:29.140 +05:00 [INF] End processing HTTP request after 794.9853ms - 200
+2025-11-03 00:18:29.160 +05:00 [DBG] Connection id "0HNGQ8IDCHOB2" started.
+2025-11-03 00:18:29.162 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-03 00:18:29.183 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-03 00:18:29.268 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:18:29.306 +05:00 [DBG] Connection id "0HNGQ8IDCHOB1" stopped.
+2025-11-03 00:18:29.389 +05:00 [DBG] Connection id "0HNGQ8IDCHOB3" accepted.
+2025-11-03 00:18:29.390 +05:00 [DBG] Connection id "0HNGQ8IDCHOB2" stopped.
+2025-11-03 00:18:29.394 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:18:29.399 +05:00 [DBG] Connection id "0HNGQ8IDCHOB3" started.
+2025-11-03 00:18:29.399 +05:00 [DBG] Connection id "0HNGQ8IDCHOB1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:18:29.401 +05:00 [DBG] Connection id "0HNGQ8IDCHOB2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:18:29.425 +05:00 [DBG] Connection 0HNGQ8IDCHOB3 established using the following protocol: "Tls13"
+2025-11-03 00:18:29.498 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/index.html - null null
+2025-11-03 00:18:29.543 +05:00 [INF] Received HTTP response headers after 140.1447ms - 200
+2025-11-03 00:18:29.545 +05:00 [INF] End processing HTTP request after 276.7025ms - 200
+2025-11-03 00:18:29.548 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:18:29.550 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:18:29.563 +05:00 [DBG] No candidates found for the request path '/index.html'
+2025-11-03 00:18:29.566 +05:00 [DBG] Request did not match any endpoints
+2025-11-03 00:18:29.589 +05:00 [INF] HTTP GET /index.html responded 404 in 2.3887 ms
+2025-11-03 00:18:29.599 +05:00 [DBG] Connection id "0HNGQ8IDCHOB3" received FIN.
+2025-11-03 00:18:29.599 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/index.html - 404 null null 111.2978ms
+2025-11-03 00:18:29.606 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7288/index.html, Response status code: 404
+2025-11-03 00:18:29.607 +05:00 [DBG] Connection id "0HNGQ8IDCHOB3" is closed. The last processed stream ID was 1.
+2025-11-03 00:18:29.615 +05:00 [DBG] Connection id "0HNGQ8IDCHOB3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:18:29.621 +05:00 [DBG] The connection queue processing loop for 0HNGQ8IDCHOB3 completed.
+2025-11-03 00:18:29.626 +05:00 [DBG] Connection id "0HNGQ8IDCHOB3" stopped.
+2025-11-03 00:18:29.759 +05:00 [INF] Received HTTP response headers after 207.1408ms - 200
+2025-11-03 00:18:29.766 +05:00 [INF] End processing HTTP request after 218.4411ms - 200
+2025-11-03 00:18:58.723 +05:00 [DBG] Connection id "0HNGQ8IDCHOB4" accepted.
+2025-11-03 00:18:58.747 +05:00 [DBG] Connection id "0HNGQ8IDCHOB4" started.
+2025-11-03 00:18:58.756 +05:00 [DBG] Connection 0HNGQ8IDCHOB4 established using the following protocol: "Tls13"
+2025-11-03 00:18:58.761 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-03 00:18:58.799 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/_vs/browserLink - null null
+2025-11-03 00:18:58.865 +05:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-11-03 00:18:58.867 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 106.3506ms
+2025-11-03 00:18:58.895 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.5115ms
+2025-11-03 00:18:58.993 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/swagger/v1/swagger.json - null null
+2025-11-03 00:18:58.999 +05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-03 00:18:59.001 +05:00 [DBG] Request did not match any endpoints
+2025-11-03 00:18:59.021 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.7629ms
+2025-11-03 00:19:47.725 +05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-03 00:19:47.878 +05:00 [DBG] Hosting starting
+2025-11-03 00:19:47.943 +05:00 [INF] CacheWarmupWorker started
+2025-11-03 00:19:47.981 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:19:47.985 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:19:48.094 +05:00 [DBG] Middleware loaded
+2025-11-03 00:19:48.098 +05:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16509 B).
+2025-11-03 00:19:48.102 +05:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-03 00:19:48.225 +05:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-11-03 00:19:48.229 +05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-03 00:19:48.232 +05:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-03 00:19:48.354 +05:00 [DBG] Connection id "0HNGQ8J516716" received FIN.
+2025-11-03 00:19:48.362 +05:00 [DBG] Connection id "0HNGQ8J516716" accepted.
+2025-11-03 00:19:48.364 +05:00 [INF] Now listening on: https://localhost:7288
+2025-11-03 00:19:48.364 +05:00 [DBG] Connection id "0HNGQ8J516716" started.
+2025-11-03 00:19:48.365 +05:00 [INF] Now listening on: http://localhost:5198
+2025-11-03 00:19:48.366 +05:00 [DBG] Loaded hosting startup assembly MovieService
+2025-11-03 00:19:48.367 +05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-03 00:19:48.368 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-03 00:19:48.369 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-03 00:19:48.372 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-03 00:19:48.418 +05:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-03 00:19:48.434 +05:00 [DBG] Connection id "0HNGQ8J516716" stopped.
+2025-11-03 00:19:48.437 +05:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-03 00:19:48.439 +05:00 [DBG] Connection id "0HNGQ8J516716" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:19:48.511 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-03 00:19:48.512 +05:00 [INF] Hosting environment: Development
+2025-11-03 00:19:48.514 +05:00 [INF] Content root path: D:\ASPNET\PNDCProject\MovieService\MovieService
+2025-11-03 00:19:48.515 +05:00 [DBG] Hosting started
+2025-11-03 00:19:48.701 +05:00 [INF] Received HTTP response headers after 711.6288ms - 200
+2025-11-03 00:19:48.708 +05:00 [INF] End processing HTTP request after 730.5655ms - 200
+2025-11-03 00:19:48.739 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:19:48.743 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:19:48.876 +05:00 [INF] Received HTTP response headers after 130.6557ms - 200
+2025-11-03 00:19:48.880 +05:00 [INF] End processing HTTP request after 140.4098ms - 200
+2025-11-03 00:19:48.893 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:19:48.895 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:19:49.001 +05:00 [DBG] Connection id "0HNGQ8J516717" accepted.
+2025-11-03 00:19:49.004 +05:00 [DBG] Connection id "0HNGQ8J516717" started.
+2025-11-03 00:19:49.079 +05:00 [DBG] Connection 0HNGQ8J516717 established using the following protocol: "Tls13"
+2025-11-03 00:19:49.085 +05:00 [INF] Received HTTP response headers after 189.0361ms - 200
+2025-11-03 00:19:49.165 +05:00 [INF] End processing HTTP request after 272.2094ms - 200
+2025-11-03 00:19:49.228 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/index.html - null null
+2025-11-03 00:19:49.307 +05:00 [DBG] No candidates found for the request path '/index.html'
+2025-11-03 00:19:49.309 +05:00 [DBG] Request did not match any endpoints
+2025-11-03 00:19:49.336 +05:00 [INF] HTTP GET /index.html responded 404 in 3.2714 ms
+2025-11-03 00:19:49.350 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/index.html - 404 null null 136.4726ms
+2025-11-03 00:19:49.354 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7288/index.html, Response status code: 404
+2025-11-03 00:19:49.360 +05:00 [DBG] Connection id "0HNGQ8J516717" received FIN.
+2025-11-03 00:19:49.365 +05:00 [DBG] The connection queue processing loop for 0HNGQ8J516717 completed.
+2025-11-03 00:19:49.368 +05:00 [DBG] Connection id "0HNGQ8J516717" is closed. The last processed stream ID was 1.
+2025-11-03 00:19:49.370 +05:00 [DBG] Connection id "0HNGQ8J516717" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:19:49.376 +05:00 [DBG] Connection id "0HNGQ8J516717" stopped.
+2025-11-03 00:22:46.697 +05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-03 00:22:46.844 +05:00 [DBG] Hosting starting
+2025-11-03 00:22:46.904 +05:00 [INF] CacheWarmupWorker started
+2025-11-03 00:22:46.934 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:22:46.938 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:22:47.039 +05:00 [DBG] Middleware loaded
+2025-11-03 00:22:47.042 +05:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16509 B).
+2025-11-03 00:22:47.045 +05:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-03 00:22:47.154 +05:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-11-03 00:22:47.161 +05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-03 00:22:47.166 +05:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-03 00:22:47.360 +05:00 [INF] Now listening on: https://localhost:7288
+2025-11-03 00:22:47.362 +05:00 [INF] Now listening on: http://localhost:5198
+2025-11-03 00:22:47.364 +05:00 [DBG] Loaded hosting startup assembly MovieService
+2025-11-03 00:22:47.365 +05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-03 00:22:47.367 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-03 00:22:47.369 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-03 00:22:47.378 +05:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-03 00:22:47.380 +05:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-03 00:22:47.450 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-03 00:22:47.453 +05:00 [INF] Hosting environment: Development
+2025-11-03 00:22:47.459 +05:00 [INF] Content root path: D:\ASPNET\PNDCProject\MovieService\MovieService
+2025-11-03 00:22:47.461 +05:00 [DBG] Hosting started
+2025-11-03 00:22:47.530 +05:00 [DBG] Connection id "0HNGQ8KQDUC4H" accepted.
+2025-11-03 00:22:47.549 +05:00 [DBG] Connection id "0HNGQ8KQDUC4I" accepted.
+2025-11-03 00:22:47.646 +05:00 [DBG] Connection id "0HNGQ8KQDUC4H" received FIN.
+2025-11-03 00:22:47.646 +05:00 [DBG] Connection id "0HNGQ8KQDUC4I" received FIN.
+2025-11-03 00:22:47.692 +05:00 [DBG] Connection id "0HNGQ8KQDUC4H" started.
+2025-11-03 00:22:47.702 +05:00 [DBG] Connection id "0HNGQ8KQDUC4I" started.
+2025-11-03 00:22:47.724 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-03 00:22:47.724 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-03 00:22:47.726 +05:00 [INF] Received HTTP response headers after 776.0356ms - 200
+2025-11-03 00:22:47.763 +05:00 [DBG] Connection id "0HNGQ8KQDUC4H" stopped.
+2025-11-03 00:22:47.763 +05:00 [DBG] Connection id "0HNGQ8KQDUC4I" stopped.
+2025-11-03 00:22:47.770 +05:00 [INF] End processing HTTP request after 839.0265ms - 200
+2025-11-03 00:22:47.774 +05:00 [DBG] Connection id "0HNGQ8KQDUC4I" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:22:47.774 +05:00 [DBG] Connection id "0HNGQ8KQDUC4H" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:22:47.864 +05:00 [DBG] Connection id "0HNGQ8KQDUC4J" accepted.
+2025-11-03 00:22:47.876 +05:00 [DBG] Connection id "0HNGQ8KQDUC4J" started.
+2025-11-03 00:22:47.879 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:22:47.890 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:22:47.914 +05:00 [DBG] Connection 0HNGQ8KQDUC4J established using the following protocol: "Tls13"
+2025-11-03 00:22:47.989 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/index.html - null null
+2025-11-03 00:22:48.020 +05:00 [INF] Received HTTP response headers after 127.6134ms - 200
+2025-11-03 00:22:48.022 +05:00 [INF] End processing HTTP request after 142.8497ms - 200
+2025-11-03 00:22:48.024 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:22:48.026 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:22:48.046 +05:00 [DBG] No candidates found for the request path '/index.html'
+2025-11-03 00:22:48.049 +05:00 [DBG] Request did not match any endpoints
+2025-11-03 00:22:48.078 +05:00 [INF] HTTP GET /index.html responded 404 in 2.3609 ms
+2025-11-03 00:22:48.087 +05:00 [DBG] Connection id "0HNGQ8KQDUC4J" received FIN.
+2025-11-03 00:22:48.088 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/index.html - 404 null null 109.3457ms
+2025-11-03 00:22:48.094 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7288/index.html, Response status code: 404
+2025-11-03 00:22:48.094 +05:00 [DBG] Connection id "0HNGQ8KQDUC4J" is closed. The last processed stream ID was 1.
+2025-11-03 00:22:48.099 +05:00 [DBG] Connection id "0HNGQ8KQDUC4J" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:22:48.106 +05:00 [DBG] The connection queue processing loop for 0HNGQ8KQDUC4J completed.
+2025-11-03 00:22:48.109 +05:00 [DBG] Connection id "0HNGQ8KQDUC4J" stopped.
+2025-11-03 00:22:48.174 +05:00 [INF] Received HTTP response headers after 146.6774ms - 200
+2025-11-03 00:22:48.176 +05:00 [INF] End processing HTTP request after 151.4824ms - 200
+2025-11-03 00:34:06.282 +05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-03 00:34:06.432 +05:00 [DBG] Hosting starting
+2025-11-03 00:34:06.494 +05:00 [INF] CacheWarmupWorker started
+2025-11-03 00:34:06.522 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:34:06.524 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:34:06.609 +05:00 [DBG] Middleware loaded
+2025-11-03 00:34:06.611 +05:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16509 B).
+2025-11-03 00:34:06.613 +05:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-03 00:34:06.693 +05:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-11-03 00:34:06.695 +05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-03 00:34:06.698 +05:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-03 00:34:06.841 +05:00 [INF] Now listening on: https://localhost:7288
+2025-11-03 00:34:06.843 +05:00 [INF] Now listening on: http://localhost:5198
+2025-11-03 00:34:06.844 +05:00 [DBG] Loaded hosting startup assembly MovieService
+2025-11-03 00:34:06.844 +05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-03 00:34:06.845 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-03 00:34:06.845 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-03 00:34:06.852 +05:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-03 00:34:06.854 +05:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-03 00:34:06.882 +05:00 [DBG] Connection id "0HNGQ8R4SO759" received FIN.
+2025-11-03 00:34:06.887 +05:00 [DBG] Connection id "0HNGQ8R4SO759" accepted.
+2025-11-03 00:34:06.891 +05:00 [DBG] Connection id "0HNGQ8R4SO759" started.
+2025-11-03 00:34:06.900 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-03 00:34:06.915 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-03 00:34:06.922 +05:00 [INF] Hosting environment: Development
+2025-11-03 00:34:06.923 +05:00 [INF] Content root path: D:\ASPNET\PNDCProject\MovieService\MovieService
+2025-11-03 00:34:06.924 +05:00 [DBG] Hosting started
+2025-11-03 00:34:06.924 +05:00 [DBG] Connection id "0HNGQ8R4SO759" stopped.
+2025-11-03 00:34:06.928 +05:00 [DBG] Connection id "0HNGQ8R4SO759" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:34:07.191 +05:00 [INF] Received HTTP response headers after 662.9295ms - 200
+2025-11-03 00:34:07.196 +05:00 [INF] End processing HTTP request after 677.1835ms - 200
+2025-11-03 00:34:07.219 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:34:07.222 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:34:07.357 +05:00 [INF] Received HTTP response headers after 133.8195ms - 200
+2025-11-03 00:34:07.358 +05:00 [INF] End processing HTTP request after 139.124ms - 200
+2025-11-03 00:34:07.377 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:34:07.379 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:34:07.402 +05:00 [DBG] Connection id "0HNGQ8R4SO75A" accepted.
+2025-11-03 00:34:07.403 +05:00 [DBG] Connection id "0HNGQ8R4SO75A" started.
+2025-11-03 00:34:07.456 +05:00 [DBG] Connection 0HNGQ8R4SO75A established using the following protocol: "Tls13"
+2025-11-03 00:34:07.536 +05:00 [INF] Received HTTP response headers after 151.588ms - 200
+2025-11-03 00:34:07.539 +05:00 [INF] End processing HTTP request after 161.6911ms - 200
+2025-11-03 00:34:07.567 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/index.html - null null
+2025-11-03 00:34:07.643 +05:00 [DBG] No candidates found for the request path '/index.html'
+2025-11-03 00:34:07.645 +05:00 [DBG] Request did not match any endpoints
+2025-11-03 00:34:07.668 +05:00 [INF] HTTP GET /index.html responded 404 in 2.4790 ms
+2025-11-03 00:34:07.675 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/index.html - 404 null null 122.2888ms
+2025-11-03 00:34:07.680 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7288/index.html, Response status code: 404
+2025-11-03 00:34:07.683 +05:00 [DBG] Connection id "0HNGQ8R4SO75A" received FIN.
+2025-11-03 00:34:07.691 +05:00 [DBG] Connection id "0HNGQ8R4SO75A" is closed. The last processed stream ID was 1.
+2025-11-03 00:34:07.692 +05:00 [DBG] The connection queue processing loop for 0HNGQ8R4SO75A completed.
+2025-11-03 00:34:07.693 +05:00 [DBG] Connection id "0HNGQ8R4SO75A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:34:07.707 +05:00 [DBG] Connection id "0HNGQ8R4SO75A" stopped.
+2025-11-03 00:35:54.970 +05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-03 00:35:55.134 +05:00 [DBG] Hosting starting
+2025-11-03 00:35:55.207 +05:00 [INF] CacheWarmupWorker started
+2025-11-03 00:35:55.242 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:35:55.247 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:35:55.355 +05:00 [DBG] Middleware loaded
+2025-11-03 00:35:55.359 +05:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16509 B).
+2025-11-03 00:35:55.397 +05:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-03 00:35:55.495 +05:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-11-03 00:35:55.500 +05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-03 00:35:55.504 +05:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-03 00:35:55.643 +05:00 [INF] Now listening on: https://localhost:7288
+2025-11-03 00:35:55.645 +05:00 [INF] Now listening on: http://localhost:5198
+2025-11-03 00:35:55.646 +05:00 [DBG] Loaded hosting startup assembly MovieService
+2025-11-03 00:35:55.647 +05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-03 00:35:55.648 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-03 00:35:55.649 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-03 00:35:55.657 +05:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-03 00:35:55.659 +05:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-03 00:35:55.730 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-03 00:35:55.734 +05:00 [INF] Hosting environment: Development
+2025-11-03 00:35:55.735 +05:00 [INF] Content root path: D:\ASPNET\PNDCProject\MovieService\MovieService
+2025-11-03 00:35:55.737 +05:00 [DBG] Hosting started
+2025-11-03 00:35:55.885 +05:00 [INF] Received HTTP response headers after 633.9121ms - 200
+2025-11-03 00:35:55.892 +05:00 [INF] End processing HTTP request after 653.3306ms - 200
+2025-11-03 00:35:55.922 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:35:55.926 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:35:56.060 +05:00 [DBG] Connection id "0HNGQ8S5DUJ04" accepted.
+2025-11-03 00:35:56.063 +05:00 [DBG] Connection id "0HNGQ8S5DUJ05" accepted.
+2025-11-03 00:35:56.080 +05:00 [DBG] Connection id "0HNGQ8S5DUJ04" received FIN.
+2025-11-03 00:35:56.084 +05:00 [INF] Received HTTP response headers after 155.1024ms - 200
+2025-11-03 00:35:56.080 +05:00 [DBG] Connection id "0HNGQ8S5DUJ05" received FIN.
+2025-11-03 00:35:56.090 +05:00 [DBG] Connection id "0HNGQ8S5DUJ04" started.
+2025-11-03 00:35:56.090 +05:00 [DBG] Connection id "0HNGQ8S5DUJ05" started.
+2025-11-03 00:35:56.097 +05:00 [INF] End processing HTTP request after 174.4926ms - 200
+2025-11-03 00:35:56.105 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:35:56.108 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:35:56.110 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-03 00:35:56.111 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-03 00:35:56.167 +05:00 [DBG] Connection id "0HNGQ8S5DUJ05" stopped.
+2025-11-03 00:35:56.170 +05:00 [DBG] Connection id "0HNGQ8S5DUJ04" stopped.
+2025-11-03 00:35:56.174 +05:00 [DBG] Connection id "0HNGQ8S5DUJ05" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:35:56.175 +05:00 [DBG] Connection id "0HNGQ8S5DUJ04" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:35:56.252 +05:00 [INF] Received HTTP response headers after 129.1107ms - 200
+2025-11-03 00:35:56.254 +05:00 [INF] End processing HTTP request after 148.8552ms - 200
+2025-11-03 00:35:56.349 +05:00 [DBG] Connection id "0HNGQ8S5DUJ06" accepted.
+2025-11-03 00:35:56.357 +05:00 [DBG] Connection id "0HNGQ8S5DUJ06" started.
+2025-11-03 00:35:56.369 +05:00 [DBG] Connection id "0HNGQ8S5DUJ06" received FIN.
+2025-11-03 00:35:56.372 +05:00 [DBG] Connection id "0HNGQ8S5DUJ07" accepted.
+2025-11-03 00:35:56.384 +05:00 [DBG] Connection id "0HNGQ8S5DUJ07" started.
+2025-11-03 00:35:56.385 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-03 00:35:56.394 +05:00 [DBG] Connection id "0HNGQ8S5DUJ06" stopped.
+2025-11-03 00:35:56.396 +05:00 [DBG] Connection id "0HNGQ8S5DUJ06" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:35:56.399 +05:00 [DBG] Connection 0HNGQ8S5DUJ07 established using the following protocol: "Tls13"
+2025-11-03 00:35:56.471 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/index.html - null null
+2025-11-03 00:35:56.531 +05:00 [DBG] No candidates found for the request path '/index.html'
+2025-11-03 00:35:56.533 +05:00 [DBG] Request did not match any endpoints
+2025-11-03 00:35:56.557 +05:00 [INF] HTTP GET /index.html responded 404 in 2.4071 ms
+2025-11-03 00:35:56.567 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/index.html - 404 null null 105.6751ms
+2025-11-03 00:35:56.571 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7288/index.html, Response status code: 404
+2025-11-03 00:35:58.703 +05:00 [DBG] Connection id "0HNGQ8S5DUJ07" received FIN.
+2025-11-03 00:35:58.713 +05:00 [DBG] The connection queue processing loop for 0HNGQ8S5DUJ07 completed.
+2025-11-03 00:35:58.715 +05:00 [DBG] Connection id "0HNGQ8S5DUJ07" is closed. The last processed stream ID was 1.
+2025-11-03 00:35:58.727 +05:00 [DBG] Connection id "0HNGQ8S5DUJ07" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:35:58.740 +05:00 [DBG] Connection id "0HNGQ8S5DUJ07" stopped.
+2025-11-03 00:36:07.957 +05:00 [DBG] Connection id "0HNGQ8S5DUJ08" accepted.
+2025-11-03 00:36:07.959 +05:00 [DBG] Connection id "0HNGQ8S5DUJ08" started.
+2025-11-03 00:36:07.969 +05:00 [DBG] Connection 0HNGQ8S5DUJ08 established using the following protocol: "Tls13"
+2025-11-03 00:36:07.975 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/_vs/browserLink - null null
+2025-11-03 00:36:07.975 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-03 00:36:08.000 +05:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-11-03 00:36:08.002 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 28.0489ms
+2025-11-03 00:36:08.029 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.5531ms
+2025-11-03 00:36:08.100 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/swagger/v1/swagger.json - null null
+2025-11-03 00:36:08.105 +05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-03 00:36:08.106 +05:00 [DBG] Request did not match any endpoints
+2025-11-03 00:36:08.118 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.1183ms
+2025-11-03 00:37:10.529 +05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-03 00:37:10.672 +05:00 [DBG] Hosting starting
+2025-11-03 00:37:10.731 +05:00 [INF] CacheWarmupWorker started
+2025-11-03 00:37:10.764 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:37:10.769 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:37:10.866 +05:00 [DBG] Middleware loaded
+2025-11-03 00:37:10.869 +05:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16509 B).
+2025-11-03 00:37:10.871 +05:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-11-03 00:37:10.964 +05:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-11-03 00:37:10.968 +05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-03 00:37:10.971 +05:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-11-03 00:37:11.168 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1L" received FIN.
+2025-11-03 00:37:11.175 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1L" accepted.
+2025-11-03 00:37:11.177 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1L" started.
+2025-11-03 00:37:11.187 +05:00 [INF] Now listening on: https://localhost:7288
+2025-11-03 00:37:11.189 +05:00 [INF] Now listening on: http://localhost:5198
+2025-11-03 00:37:11.190 +05:00 [DBG] Loaded hosting startup assembly MovieService
+2025-11-03 00:37:11.192 +05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-03 00:37:11.193 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-03 00:37:11.194 +05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-03 00:37:11.194 +05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-03 00:37:11.225 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1L" stopped.
+2025-11-03 00:37:11.230 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1L" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:37:11.233 +05:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-03 00:37:11.236 +05:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-11-03 00:37:11.362 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-03 00:37:11.368 +05:00 [INF] Hosting environment: Development
+2025-11-03 00:37:11.369 +05:00 [INF] Content root path: D:\ASPNET\PNDCProject\MovieService\MovieService
+2025-11-03 00:37:11.372 +05:00 [DBG] Hosting started
+2025-11-03 00:37:11.384 +05:00 [INF] Received HTTP response headers after 609.243ms - 200
+2025-11-03 00:37:11.393 +05:00 [INF] End processing HTTP request after 632.3005ms - 200
+2025-11-03 00:37:11.423 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:37:11.430 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:37:11.562 +05:00 [INF] Received HTTP response headers after 129.9757ms - 200
+2025-11-03 00:37:11.564 +05:00 [INF] End processing HTTP request after 140.1603ms - 200
+2025-11-03 00:37:11.566 +05:00 [INF] Start processing HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:37:11.567 +05:00 [INF] Sending HTTP request GET https://api.themoviedb.org/3/search/movie?*
+2025-11-03 00:37:11.667 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1M" accepted.
+2025-11-03 00:37:11.670 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1M" started.
+2025-11-03 00:37:11.703 +05:00 [INF] Received HTTP response headers after 133.6118ms - 200
+2025-11-03 00:37:11.704 +05:00 [INF] End processing HTTP request after 137.812ms - 200
+2025-11-03 00:37:11.734 +05:00 [DBG] Connection 0HNGQ8SRQ7Q1M established using the following protocol: "Tls13"
+2025-11-03 00:37:11.838 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/swagger - null null
+2025-11-03 00:37:11.925 +05:00 [DBG] No candidates found for the request path '/swagger'
+2025-11-03 00:37:11.928 +05:00 [DBG] Request did not match any endpoints
+2025-11-03 00:37:11.948 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/swagger - 301 null null 123.878ms
+2025-11-03 00:37:11.960 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1M" received FIN.
+2025-11-03 00:37:11.965 +05:00 [DBG] The connection queue processing loop for 0HNGQ8SRQ7Q1M completed.
+2025-11-03 00:37:11.967 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1M" is closed. The last processed stream ID was 1.
+2025-11-03 00:37:11.970 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1M" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:37:11.982 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1N" accepted.
+2025-11-03 00:37:11.983 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1N" started.
+2025-11-03 00:37:11.984 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1M" stopped.
+2025-11-03 00:37:11.992 +05:00 [DBG] Connection 0HNGQ8SRQ7Q1N established using the following protocol: "Tls13"
+2025-11-03 00:37:11.997 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-03 00:37:12.011 +05:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-11-03 00:37:12.013 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 16.667ms
+2025-11-03 00:37:12.027 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/_vs/browserLink - null null
+2025-11-03 00:37:12.071 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.0091ms
+2025-11-03 00:37:12.126 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7288/swagger/v1/swagger.json - null null
+2025-11-03 00:37:12.131 +05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-03 00:37:12.132 +05:00 [DBG] Request did not match any endpoints
+2025-11-03 00:37:12.143 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7288/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.2983ms
+2025-11-03 00:37:14.746 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1N" received FIN.
+2025-11-03 00:37:14.753 +05:00 [DBG] The connection queue processing loop for 0HNGQ8SRQ7Q1N completed.
+2025-11-03 00:37:14.753 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1N" is closed. The last processed stream ID was 5.
+2025-11-03 00:37:14.771 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-03 00:37:14.794 +05:00 [DBG] Connection id "0HNGQ8SRQ7Q1N" stopped.
