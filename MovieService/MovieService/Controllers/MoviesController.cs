@@ -22,7 +22,7 @@ namespace MovieService.Controllers
             _cfg = cfg;
         }
 
-        // ✅ Token Validation Helper (calls AuthService)
+        // Check token validity using AuthService
         private async Task<(bool Valid, string Role)> ValidateTokenAsync(string token)
         {
             if (string.IsNullOrWhiteSpace(token))
@@ -49,7 +49,7 @@ namespace MovieService.Controllers
             }
         }
 
-        // 🎬 GET api/movies/search?q=batman
+        // Search movies by keyword
         [HttpGet("search")]
         public async Task<IActionResult> Search([FromQuery] string q, CancellationToken ct)
         {
@@ -66,7 +66,7 @@ namespace MovieService.Controllers
             return Ok(res);
         }
 
-        // 🎬 POST api/movies/bulk
+        // Fetch multiple movies using IDs
         [HttpPost("bulk")]
         public async Task<IActionResult> Bulk([FromBody] List<int> ids, CancellationToken ct)
         {
@@ -86,7 +86,7 @@ namespace MovieService.Controllers
             return Ok(res);
         }
 
-        // ✅ Token Validation Result Model
+        // Model for token validation response
         public class TokenValidationResult
         {
             public bool Valid { get; set; }

@@ -97,6 +97,18 @@
           }
         }
       }
+    },
+    "/": {
+      "get": {
+        "tags": [
+          "AuthService"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

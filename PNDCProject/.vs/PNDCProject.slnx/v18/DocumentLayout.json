@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\ASPNET\\PNDCProject\\PNDCProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CAB94DDD-FACC-9B5C-03E9-F70440F1A6FA}|AuthService\\AuthService.csproj|d:\\aspnet\\pndcproject\\pndcproject\\authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAB94DDD-FACC-9B5C-03E9-F70440F1A6FA}|AuthService\\AuthService.csproj|solutionrelative:authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{93088BB0-B2A1-387F-CB58-9A1D3EB22F9C}|..\\MovieService\\MovieService\\MovieService.csproj|d:\\aspnet\\pndcproject\\movieservice\\movieservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -25,10 +29,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{93088BB0-B2A1-387F-CB58-9A1D3EB22F9C}|..\\MovieService\\MovieService\\MovieService.csproj|d:\\aspnet\\pndcproject\\movieservice\\movieservice\\background\\cachewarmupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAB94DDD-FACC-9B5C-03E9-F70440F1A6FA}|AuthService\\AuthService.csproj|d:\\aspnet\\pndcproject\\pndcproject\\authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAB94DDD-FACC-9B5C-03E9-F70440F1A6FA}|AuthService\\AuthService.csproj|solutionrelative:authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAB94DDD-FACC-9B5C-03E9-F70440F1A6FA}|AuthService\\AuthService.csproj|d:\\aspnet\\pndcproject\\pndcproject\\authservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -109,33 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MovieDto.cs",
-              "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Models\\MovieDto.cs",
-              "RelativeDocumentMoniker": "..\\MovieService\\MovieService\\Models\\MovieDto.cs",
-              "ToolTip": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Models\\MovieDto.cs",
-              "RelativeToolTip": "..\\MovieService\\MovieService\\Models\\MovieDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T19:46:48.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IMovieClient.cs",
-              "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Services\\IMovieClient.cs",
-              "RelativeDocumentMoniker": "..\\MovieService\\MovieService\\Services\\IMovieClient.cs",
-              "ToolTip": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Services\\IMovieClient.cs",
-              "RelativeToolTip": "..\\MovieService\\MovieService\\Services\\IMovieClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T19:45:23.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "MovieService.cs",
               "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Services\\MovieService.cs",
               "RelativeDocumentMoniker": "..\\MovieService\\MovieService\\Services\\MovieService.cs",
@@ -143,12 +117,11 @@
               "RelativeToolTip": "..\\MovieService\\MovieService\\Services\\MovieService.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T19:46:04.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T19:46:04.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TmdbMovieClient.cs",
               "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Services\\TmdbMovieClient.cs",
               "RelativeDocumentMoniker": "..\\MovieService\\MovieService\\Services\\TmdbMovieClient.cs",
@@ -156,12 +129,11 @@
               "RelativeToolTip": "..\\MovieService\\MovieService\\Services\\TmdbMovieClient.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAiwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T20:20:38.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T20:20:38.809Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Program.cs",
               "RelativeDocumentMoniker": "..\\MovieService\\MovieService\\Program.cs",
@@ -174,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TmdbSearchResponse.cs",
               "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Models\\TmdbSearchResponse.cs",
               "RelativeDocumentMoniker": "..\\MovieService\\MovieService\\Models\\TmdbSearchResponse.cs",
@@ -182,12 +154,48 @@
               "RelativeToolTip": "..\\MovieService\\MovieService\\Models\\TmdbSearchResponse.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAywCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T19:46:33.434Z",
+              "WhenOpened": "2025-10-28T19:46:33.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\Program.cs",
+              "RelativeDocumentMoniker": "AuthService\\Program.cs",
+              "ToolTip": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\Program.cs",
+              "RelativeToolTip": "AuthService\\Program.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAcwDsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T19:56:53.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
+              "Title": "IMovieClient.cs",
+              "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Services\\IMovieClient.cs",
+              "RelativeDocumentMoniker": "..\\MovieService\\MovieService\\Services\\IMovieClient.cs",
+              "ToolTip": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Services\\IMovieClient.cs",
+              "RelativeToolTip": "..\\MovieService\\MovieService\\Services\\IMovieClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T19:45:23.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MovieDto.cs",
+              "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Models\\MovieDto.cs",
+              "RelativeDocumentMoniker": "..\\MovieService\\MovieService\\Models\\MovieDto.cs",
+              "ToolTip": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Models\\MovieDto.cs",
+              "RelativeToolTip": "..\\MovieService\\MovieService\\Models\\MovieDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T19:46:48.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "MoviesController.cs",
               "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Controllers\\MoviesController.cs",
               "RelativeDocumentMoniker": "..\\MovieService\\MovieService\\Controllers\\MoviesController.cs",
@@ -195,12 +203,11 @@
               "RelativeToolTip": "..\\MovieService\\MovieService\\Controllers\\MoviesController.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAiwGAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T19:44:50.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T19:44:50.171Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "CacheWarmupService.cs",
               "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\MovieService\\MovieService\\Background\\CacheWarmupService.cs",
               "RelativeDocumentMoniker": "..\\MovieService\\MovieService\\Background\\CacheWarmupService.cs",
@@ -208,21 +215,7 @@
               "RelativeToolTip": "..\\MovieService\\MovieService\\Background\\CacheWarmupService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T19:49:21.353Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\Program.cs",
-              "RelativeDocumentMoniker": "AuthService\\Program.cs",
-              "ToolTip": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\Program.cs",
-              "RelativeToolTip": "AuthService\\Program.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAcwEUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T19:56:53.906Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T19:49:21.353Z"
             },
             {
               "$type": "Document",
@@ -402,8 +395,7 @@
               "RelativeToolTip": "..\\MovieService\\MovieService\\MovieService.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-27T19:49:54.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T19:49:54.796Z"
             },
             {
               "$type": "Document",
@@ -415,8 +407,7 @@
               "RelativeToolTip": "AuthService\\AuthService.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-27T19:49:54.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T19:49:54.311Z"
             },
             {
               "$type": "Document",
@@ -427,8 +418,7 @@
               "ToolTip": "D:\\ASPNET\\PNDCProject\\PNDCProject\\AuthService\\AuthService.csproj",
               "RelativeToolTip": "AuthService\\AuthService.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-27T19:50:02.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T19:50:02.24Z"
             }
           ]
         }

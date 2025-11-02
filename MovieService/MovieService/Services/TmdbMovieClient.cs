@@ -18,17 +18,18 @@ namespace MovieService.Services
             _log = log;
         }
 
-        // 🔍 Search movies from TMDB
+        // Search movies from TMDB
         public async Task<TmdbSearchResponse?> SearchAsync(string query, CancellationToken ct)
         {
             var client = _httpFactory.CreateClient("tmdb");
 
-            // ✅ Use Bearer Token authentication (v4 API)
+            // Add the API key as a Bearer token
             client.DefaultRequestHeaders.Authorization =
                 new AuthenticationHeaderValue("Bearer", _apiKey);
 
             var url = $"search/movie?query={Uri.EscapeDataString(query)}&page=1";
 
+            // Send request to TMDB
             var res = await client.GetAsync(url, ct);
             if (!res.IsSuccessStatusCode)
             {
@@ -36,21 +37,23 @@ namespace MovieService.Services
                 return null;
             }
 
+            // Convert JSON response to C# model
             var dto = await res.Content.ReadFromJsonAsync<TmdbSearchResponse>(cancellationToken: ct);
             return dto;
         }
 
-        // 🎬 Get movie details by ID
+        // Get movie details by ID
         public async Task<TmdbMovie?> GetMovieByIdAsync(int id, CancellationToken ct)
         {
             var client = _httpFactory.CreateClient("tmdb");
 
-            // ✅ Use Bearer Token authentication (v4 API)
+            // Add the API key as a Bearer token
             client.DefaultRequestHeaders.Authorization =
                 new AuthenticationHeaderValue("Bearer", _apiKey);
 
             var url = $"movie/{id}";
 
+            // Send request to TMDB
             var res = await client.GetAsync(url, ct);
             if (!res.IsSuccessStatusCode)
             {
@@ -58,6 +61,7 @@ namespace MovieService.Services
                 return null;
             }
 
+            // Convert JSON response to C# model
             var dto = await res.Content.ReadFromJsonAsync<TmdbMovie>(cancellationToken: ct);
             return dto;
         }
