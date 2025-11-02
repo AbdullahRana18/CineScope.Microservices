@@ -49,8 +49,6 @@ D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\Serilog.Sinks.D
 D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\Serilog.Sinks.File.dll
 D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\Serilog.Sinks.Seq.dll
 D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
-D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\Shared.dll
-D:\ASPNET\PNDCProject\MovieService\MovieService\bin\Debug\net9.0\Shared.pdb
 D:\ASPNET\PNDCProject\MovieService\MovieService\obj\Debug\net9.0\MovieService.csproj.AssemblyReference.cache
 D:\ASPNET\PNDCProject\MovieService\MovieService\obj\Debug\net9.0\rpswa.dswa.cache.json
 D:\ASPNET\PNDCProject\MovieService\MovieService\obj\Debug\net9.0\MovieService.GeneratedMSBuildEditorConfig.editorconfig

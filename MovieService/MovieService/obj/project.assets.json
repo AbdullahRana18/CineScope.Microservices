@@ -1049,16 +1049,6 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
-      },
-      "Shared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/Shared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Shared.dll": {}
-        }
       }
     }
   },
@@ -2813,11 +2803,6 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "Shared/1.0.0": {
-      "type": "project",
-      "path": "../../Shared/Shared/Shared.csproj",
-      "msbuildProject": "../../Shared/Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2836,7 +2821,6 @@
       "Serilog.Sinks.Console >= 6.0.0",
       "Serilog.Sinks.File >= 7.0.0",
       "Serilog.Sinks.Seq >= 9.0.0",
-      "Shared >= 1.0.0",
       "Swashbuckle.AspNetCore >= 9.0.6",
       "System.IdentityModel.Tokens.Jwt >= 8.14.0",
       "prometheus-net.AspNetCore >= 8.2.1"
@@ -2873,11 +2857,7 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {
-            "D:\\ASPNET\\PNDCProject\\Shared\\Shared\\Shared.csproj": {
-              "projectPath": "D:\\ASPNET\\PNDCProject\\Shared\\Shared\\Shared.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
