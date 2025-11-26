@@ -1,0 +1,41 @@
+# Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Build directories
+bin/
+obj/
+Debug/
+Release/
+
+# ASP.NET Core
+appsettings.Development.json
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+logs/
+*.log
+
+# NuGet
+*.nupkg
+project.lock.json
+project.assets.json
+*.nuget.props
+*.nuget.targets
+
+# Cache
+*.cache
+*.vsidx
+*.tmp
+*.pdb
+*.dll
+*.exe
+
+# Publish output
+publish/
+
+# JetBrains Rider
+.idea/
