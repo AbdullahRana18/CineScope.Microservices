@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="D:/ASPNET/PNDCProject/MovieService/MovieService/MovieService.csproj" />
   <Project Path="D:/ASPNET/PNDCProject/PNDCProject/AuthService/AuthService.csproj" />
+  <Project Path="MovieWebUI/MovieWebUI.csproj" Id="83015323-b907-4313-b85b-3f121c7172de" />
 </Solution>
