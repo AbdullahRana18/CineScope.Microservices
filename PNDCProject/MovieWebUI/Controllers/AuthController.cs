@@ -12,19 +12,16 @@ namespace MovieWebUI.Controllers
             _httpClientFactory = httpClientFactory;
         }
 
-        // Login page
         public IActionResult Login()
         {
             return View();
         }
 
-        // Register page
         public IActionResult Register()
         {
             return View();
         }
 
-        // POST login
         [HttpPost]
         public async Task<IActionResult> Login(string username, string password)
         {
@@ -49,18 +46,24 @@ namespace MovieWebUI.Controllers
             validateRes.EnsureSuccessStatusCode();
             var validateJson = await validateRes.Content.ReadFromJsonAsync<ValidateResponse>();
 
-            // Save token & role in session
+            // Save token, role, and username in session
             HttpContext.Session.SetString("token", json.Token);
             HttpContext.Session.SetString("role", validateJson.Role);
+            HttpContext.Session.SetString("username", username); // <-- username session
 
-            // Redirect based on role
             if (validateJson.Role == "Admin")
                 return Redirect("/Admin/Dashboard");
             else
                 return Redirect("/Movies/Index");
         }
 
-        // POST register
+        [HttpPost]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
+        }
+
         [HttpPost]
         public async Task<IActionResult> Register(string username, string email, string password)
         {

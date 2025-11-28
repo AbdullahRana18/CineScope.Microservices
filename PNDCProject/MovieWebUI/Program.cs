@@ -6,6 +6,9 @@ builder.Services.AddSession(options =>
     options.IdleTimeout = TimeSpan.FromHours(5);
 });
 
+// Register IHttpContextAccessor for _Layout injection
+builder.Services.AddHttpContextAccessor();  // <-- ye line add karo
+
 // HttpClients for backend
 builder.Services.AddHttpClient("auth", client =>
 {
