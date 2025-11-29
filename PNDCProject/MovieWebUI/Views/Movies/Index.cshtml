@@ -1,6 +1,8 @@
 ﻿@model List<MovieWebUI.Models.MovieDto>
 @{
     ViewData["Title"] = "Movies";
+
+    var searchQuery = ViewData["SearchQuery"]?.ToString();
 }
 
 <div class="container mt-4">
@@ -13,8 +15,26 @@
     </form>
 
     <!-- Trending Movies Heading -->
-    <h2 class="mb-4">Trending Movies</h2>
+    @if (string.IsNullOrWhiteSpace(searchQuery))
+    {
+        <h2 class="mb-4">Trending Movies</h2>
+    }
+    else
+    {
+        <h2 class="mb-4">Search Results for: <span class="text-primary">@searchQuery</span></h2>
+	}
 
+    
+
+    <!-- No Movies Found -->
+    @if (Model == null || Model.Count == 0)
+    {
+        <div class="alert alert-warning text-center fs-5">
+            Sorry! This movie does not exist.
+        </div>
+	}
+    else
+    {
     <!-- Movies Grid -->
     <div class="row">
         @foreach (var movie in Model)
@@ -31,4 +51,5 @@
             </div>
         }
     </div>
+    }
 </div>
