@@ -22,7 +22,9 @@ namespace MovieService.Controllers
             _cfg = cfg;
         }
 
-        // Check token validity using AuthService
+        // -------------------------
+        // Token validation helper
+        // -------------------------
         private async Task<(bool Valid, string Role)> ValidateTokenAsync(string token)
         {
             if (string.IsNullOrWhiteSpace(token))
@@ -49,7 +51,10 @@ namespace MovieService.Controllers
             }
         }
 
-        // Search movies by keyword
+        // -------------------------
+        // Search movies by query
+        // GET: api/Movies/search?q=keyword
+        // -------------------------
         [HttpGet("search")]
         public async Task<IActionResult> Search([FromQuery] string q, CancellationToken ct)
         {
@@ -66,7 +71,33 @@ namespace MovieService.Controllers
             return Ok(res);
         }
 
-        // Fetch multiple movies using IDs
+        // -------------------------
+        // Get movie details by ID
+        // GET: api/Movies/{id}
+        // -------------------------
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id, CancellationToken ct)
+        {
+            var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            var (valid, role) = await ValidateTokenAsync(token);
+
+            if (!valid)
+                return Unauthorized("Invalid or missing token.");
+
+            if (role != "User" && role != "Admin")
+                return Forbid();
+
+            var movie = await _svc.GetMovieByIdAsync(id, ct);
+            if (movie == null)
+                return NotFound($"Movie with ID {id} not found.");
+
+            return Ok(movie);
+        }
+
+        // -------------------------
+        // Fetch multiple movies by IDs
+        // POST: api/Movies/bulk
+        // -------------------------
         [HttpPost("bulk")]
         public async Task<IActionResult> Bulk([FromBody] List<int> ids, CancellationToken ct)
         {
@@ -86,7 +117,9 @@ namespace MovieService.Controllers
             return Ok(res);
         }
 
-        // Model for token validation response
+        // -------------------------
+        // Token validation response model
+        // -------------------------
         public class TokenValidationResult
         {
             public bool Valid { get; set; }

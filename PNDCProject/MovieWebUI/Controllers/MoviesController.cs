@@ -36,5 +36,23 @@ namespace MovieWebUI.Controllers
 
             return View(movies ?? new List<MovieDto>());
         }
+
+        public async Task<IActionResult> Details(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var token = HttpContext.Session.GetString("token");
+            if (string.IsNullOrEmpty(token))
+                return RedirectToAction("Login", "Auth");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            string apiUrl = $"https://localhost:7288/api/Movies/{id}";
+
+            var movie = await client.GetFromJsonAsync<MovieDto>(apiUrl);
+
+            if (movie == null)
+            {
+                return NotFound();
+            }
+            return View(movie);
+        }
     }
 }

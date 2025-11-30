@@ -7,6 +7,7 @@ namespace MovieService.Services
     {
         Task<IEnumerable<MovieDto>> SearchMoviesAsync(string q, CancellationToken ct);
         Task<IEnumerable<MovieDto>> GetMultipleByIdsParallelAsync(IEnumerable<int> ids, CancellationToken ct);
+        Task<MovieDto?> GetMovieByIdAsync(int id, CancellationToken ct);
     }
 
     public class MovieService : IMovieService
@@ -24,10 +25,14 @@ namespace MovieService.Services
             _cacheDuration = TimeSpan.FromMinutes(int.TryParse(cfg["Cache:DefaultDurationMinutes"], out var m) ? m : 10);
         }
 
+        // -------------------------
+        // Search movies by query
+        // -------------------------
         public async Task<IEnumerable<MovieDto>> SearchMoviesAsync(string q, CancellationToken ct)
         {
             var key = $"search:{q}";
-            if (_cache.TryGetValue(key, out List<MovieDto> cached)) return cached;
+            if (_cache.TryGetValue(key, out List<MovieDto> cached))
+                return cached;
 
             var tmdb = await _client.SearchAsync(q, ct);
             var list = tmdb?.Results.Select(m => new MovieDto
@@ -43,32 +48,59 @@ namespace MovieService.Services
             return list;
         }
 
-        // Demonstrates concurrency: fetch many movie details in parallel with cancellation support
+        // -------------------------
+        // Get movie by ID
+        // -------------------------
+        public async Task<MovieDto?> GetMovieByIdAsync(int id, CancellationToken ct)
+        {
+            var cacheKey = $"movie:{id}";
+            if (_cache.TryGetValue(cacheKey, out MovieDto mv))
+                return mv;
+
+            var movie = await _client.GetMovieByIdAsync(id, ct);
+            if (movie == null) return null;
+
+            var dto = new MovieDto
+            {
+                Id = movie.Id,
+                Title = movie.Title,
+                Overview = movie.Overview,
+                PosterPath = movie.PosterPath,
+                ReleaseDate = movie.ReleaseDate
+            };
+
+            _cache.Set(cacheKey, dto, _cacheDuration);
+            return dto;
+        }
+
+        // -------------------------
+        // Fetch multiple movies by IDs concurrently
+        // -------------------------
         public async Task<IEnumerable<MovieDto>> GetMultipleByIdsParallelAsync(IEnumerable<int> ids, CancellationToken ct)
         {
             var idList = ids.Distinct().ToList();
             var tasks = idList.Select(async id =>
             {
                 var cacheKey = $"movie:{id}";
-                if (_cache.TryGetValue(cacheKey, out MovieDto mv)) return mv;
+                if (_cache.TryGetValue(cacheKey, out MovieDto mv))
+                    return mv;
 
-                // Each GetMovieByIdAsync is async and non-blocking
-                var tm = await _client.GetMovieByIdAsync(id, ct);
-                if (tm == null) return null;
+                var movie = await _client.GetMovieByIdAsync(id, ct);
+                if (movie == null) return null;
 
                 var dto = new MovieDto
                 {
-                    Id = tm.Id,
-                    Title = tm.Title,
-                    Overview = tm.Overview,
-                    PosterPath = tm.PosterPath,
-                    ReleaseDate = tm.ReleaseDate
+                    Id = movie.Id,
+                    Title = movie.Title,
+                    Overview = movie.Overview,
+                    PosterPath = movie.PosterPath,
+                    ReleaseDate = movie.ReleaseDate
                 };
+
                 _cache.Set(cacheKey, dto, _cacheDuration);
                 return dto;
             });
 
-            // Task.WhenAll runs these concurrently
             var results = await Task.WhenAll(tasks);
             return results.Where(r => r != null)!.Select(r => r!);
         }
