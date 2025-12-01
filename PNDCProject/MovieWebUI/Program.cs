@@ -7,7 +7,7 @@ builder.Services.AddSession(options =>
 });
 
 // Register IHttpContextAccessor for _Layout injection
-builder.Services.AddHttpContextAccessor();  // <-- ye line add karo
+builder.Services.AddHttpContextAccessor();  
 
 // HttpClients for backend
 builder.Services.AddHttpClient("auth", client =>

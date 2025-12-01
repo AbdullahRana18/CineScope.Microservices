@@ -49,7 +49,7 @@ namespace MovieWebUI.Controllers
             // Save token, role, and username in session
             HttpContext.Session.SetString("token", json.Token);
             HttpContext.Session.SetString("role", validateJson.Role);
-            HttpContext.Session.SetString("username", username); // <-- username session
+            HttpContext.Session.SetString("username", username);
 
             if (validateJson.Role == "Admin")
                 return Redirect("/Admin/Dashboard");
