@@ -39,20 +39,13 @@ namespace MovieWebUI.Controllers
         }
 
         // ✅ Edit User
-        public async Task<IActionResult> EditUser(string id)
+        public async Task<IActionResult> EditUser(int id)
         {
             var client = _httpClientFactory.CreateClient("auth");
-
             var token = HttpContext.Session.GetString("token");
-
-            if (!string.IsNullOrEmpty(token))
-            {
-                client.DefaultRequestHeaders.Authorization =
-                    new AuthenticationHeaderValue("Bearer", token);
-            }
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             var user = await client.GetFromJsonAsync<UserDto>($"Auth/users/{id}");
-
             return View(user);
         }
 
@@ -75,20 +68,13 @@ namespace MovieWebUI.Controllers
         }
 
         // ✅ Delete User
-        public async Task<IActionResult> DeleteUser(string id)
+        public async Task<IActionResult> DeleteUser(int id)
         {
             var client = _httpClientFactory.CreateClient("auth");
-
             var token = HttpContext.Session.GetString("token");
-
-            if (!string.IsNullOrEmpty(token))
-            {
-                client.DefaultRequestHeaders.Authorization =
-                    new AuthenticationHeaderValue("Bearer", token);
-            }
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             await client.DeleteAsync($"Auth/users/{id}");
-
             return RedirectToAction("UsersList");
         }
     }
@@ -96,9 +82,9 @@ namespace MovieWebUI.Controllers
     // ✅ DTO
     public class UserDto
     {
-        public string Id { get; set; } = "";
-        public string Username { get; set; } = "";
-        public string Email { get; set; } = "";
-        public string Role { get; set; } = "";
+        public int Id { get; set; } 
+        public string Username { get; set; } 
+        public string Email { get; set; } 
+        public string Role { get; set; } 
     }
 }
