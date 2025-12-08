@@ -1,0 +1,78 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: #343a40;
+            color: white;
+            min-height: 100vh;
+        }
+
+            .sidebar a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 12px 20px;
+            }
+
+                .sidebar a:hover {
+                    background-color: #495057;
+                }
+
+        .topbar {
+            height: 60px;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar d-flex flex-column">
+        <h4 class="text-center py-3 border-bottom">Admin Panel</h4>
+        <a asp-controller="Admin" asp-action="Dashboard"><i class="fa-solid fa-gauge me-2"></i> Dashboard</a>
+        <a asp-controller="Movies" asp-action="Index"><i class="fa-solid fa-film me-2"></i> Movies</a>
+        <a asp-controller="Admin" asp-action="UsersList"><i class="fa-solid fa-users me-2"></i> Users</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="d-flex flex-column flex-grow-1">
+        <!-- Topbar -->
+        <div class="topbar">
+            <span class="me-3">Hello, @HttpContextAccessor.HttpContext.Session.GetString("username")</span>
+            <form asp-controller="Auth" asp-action="Logout" method="post" class="m-0">
+                <button type="submit" class="btn btn-outline-danger btn-sm">Logout</button>
+            </form>
+        </div>
+
+        <!-- Page Content -->
+        <div class="content">
+            @RenderBody()
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

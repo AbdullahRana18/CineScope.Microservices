@@ -124,5 +124,18 @@ namespace AuthService.Controllers
         {
             public string Token { get; set; } = string.Empty;
         }
+
+         [HttpGet("users")]
+        public IActionResult GetAllUsers()
+        {
+            var users = _context.Users.Select(u => new {
+                u.Id,
+                u.Username,
+                u.Email,
+                u.Role
+            }).ToList();
+
+            return Ok(users);
+        }
     }
 }

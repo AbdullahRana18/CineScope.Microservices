@@ -7,14 +7,14 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Database connection
+// ✅ Database connection
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// JWT service
+// ✅ JWT service
 builder.Services.AddSingleton<JwtService>();
 
-// JWT authentication setup
+// ✅ JWT authentication setup
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -35,17 +35,21 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+// ✅ Authorization
 builder.Services.AddAuthorization();
+
+// ✅ Controllers
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// CORS policy for MovieService
+// ✅ CORS policy
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowMovieService", policy =>
+    options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins("https://localhost:7288")
+        // Allow AuthService (assume frontend at :7160) & MovieService (backend at :7288)
+        policy.WithOrigins("https://localhost:7160", "https://localhost:7288")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -53,6 +57,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+// ✅ Swagger for development
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -60,11 +65,16 @@ if (app.Environment.IsDevelopment())
     app.MapGet("/", () => Results.Redirect("/swagger"));
 }
 
+// ✅ Middleware
 app.UseHttpsRedirection();
 app.UseRouting();
-app.UseCors("AllowMovieService");
+
+// ✅ Apply CORS
+app.UseCors("AllowAll");
+
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
 
 app.Run();
