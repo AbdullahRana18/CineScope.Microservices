@@ -1,6 +1,19 @@
 ﻿@{
     Layout = null;
 }
+@if (ViewBag.Success != null)
+{
+    <div class="alert alert-success text-center">
+        @ViewBag.Success
+    </div>
+}
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger text-center">
+        @ViewBag.Error
+    </div>
+}
 
 <!DOCTYPE html>
 <html>

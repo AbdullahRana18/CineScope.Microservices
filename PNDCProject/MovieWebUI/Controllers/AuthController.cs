@@ -81,8 +81,9 @@ namespace MovieWebUI.Controllers
                 ViewBag.Error = "Registration failed";
                 return View();
             }
+            TempData["Success"] = "Account successfully created ✅";
 
-            return RedirectToAction("Login");
+            return View();
         }
 
         public class TokenResponse
