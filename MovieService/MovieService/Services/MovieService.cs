@@ -25,9 +25,9 @@ namespace MovieService.Services
             _cacheDuration = TimeSpan.FromMinutes(int.TryParse(cfg["Cache:DefaultDurationMinutes"], out var m) ? m : 10);
         }
 
-        // -------------------------
+        
         // Search movies by query
-        // -------------------------
+       
         public async Task<IEnumerable<MovieDto>> SearchMoviesAsync(string q, CancellationToken ct)
         {
             var key = $"search:{q}";
@@ -73,9 +73,9 @@ namespace MovieService.Services
             return dto;
         }
 
-        // -------------------------
+        
         // Fetch multiple movies by IDs concurrently
-        // -------------------------
+        
         public async Task<IEnumerable<MovieDto>> GetMultipleByIdsParallelAsync(IEnumerable<int> ids, CancellationToken ct)
         {
             var idList = ids.Distinct().ToList();
