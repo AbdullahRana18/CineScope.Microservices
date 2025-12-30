@@ -31,7 +31,7 @@ namespace AuthService.Controllers
         [HttpPost("register")]
         public IActionResult Register([FromBody] User user)
         {
-            // Check if username already exists
+            
             if (_context.Users.Any(u => u.Username == user.Username))
                 return BadRequest("User already exists.");
 
@@ -47,7 +47,7 @@ namespace AuthService.Controllers
             if (string.IsNullOrEmpty(user.Role))
                 user.Role = "User";
 
-            // Save user in database
+            
             _context.Users.Add(user);
             _context.SaveChanges();
 
@@ -61,17 +61,17 @@ namespace AuthService.Controllers
             // Get encryption key
             var key = _configuration["Jwt:Key"];
 
-            // Find user by username
+            
             var user = _context.Users.FirstOrDefault(u => u.Username == request.Username);
 
-            // If user not found
+            
             if (user == null)
                 return Unauthorized("Invalid username.");
 
             // Decrypt saved password
             var decryptedPassword = CryptoHelper.Decrypt(user.PasswordIV, user.PasswordHash, key);
 
-            // Check if password matches
+            
             if (decryptedPassword != request.PasswordHash)
                 return Unauthorized("Invalid password.");
 
