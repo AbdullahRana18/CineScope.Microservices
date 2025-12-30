@@ -4,72 +4,178 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>@ViewData["Title"] - Admin Panel</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Admin Portal</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     <style>
         body {
-            min-height: 100vh;
+            background-color: #f5f7fa;
+            font-family: 'Segoe UI', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .wrapper {
             display: flex;
+            width: 100%;
+            align-items: stretch;
         }
 
         .sidebar {
-            width: 220px;
-            background-color: #343a40;
-            color: white;
+            min-width: 260px;
+            max-width: 260px;
+            background-color: #1a1a2e;
+            color: #fff;
             min-height: 100vh;
+            transition: all 0.3s;
         }
 
-            .sidebar a {
-                color: white;
-                text-decoration: none;
+        .sidebar-header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .sidebar ul.components {
+            padding: 20px 0;
+        }
+
+        .sidebar ul li {
+            padding: 5px 15px;
+        }
+
+            .sidebar ul li a {
+                padding: 12px 15px;
+                font-size: 1rem;
                 display: block;
-                padding: 12px 20px;
+                color: rgba(255, 255, 255, 0.7);
+                text-decoration: none;
+                border-radius: 8px;
+                transition: all 0.3s;
+                display: flex;
+                align-items: center;
             }
 
-                .sidebar a:hover {
-                    background-color: #495057;
+                .sidebar ul li a:hover, .sidebar ul li a.active {
+                    color: #fff;
+                    background: rgba(255, 255, 255, 0.1);
+                    transform: translateX(5px);
                 }
 
-        .topbar {
-            height: 60px;
-            background-color: #f8f9fa;
+                .sidebar ul li a i {
+                    margin-right: 15px;
+                    font-size: 1.2rem;
+                }
+
+        #content {
+            width: 100%;
+            min-height: 100vh;
             display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding: 0 20px;
-            border-bottom: 1px solid #dee2e6;
+            flex-direction: column;
         }
 
-        .content {
+        .topbar {
+            background-color: #fff;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-content {
+            padding: 30px;
             flex: 1;
-            padding: 20px;
+        }
+
+        .user-dropdown .dropdown-toggle::after {
+            display: none;
+        }
+
+        .avatar-circle {
+            width: 35px;
+            height: 35px;
+            background-color: #f0f2f5;
+            color: #1a1a2e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <!-- Sidebar -->
-    <div class="sidebar d-flex flex-column">
-        <h4 class="text-center py-3 border-bottom">Admin Panel</h4>
-        <a asp-controller="Admin" asp-action="Dashboard"><i class="fa-solid fa-gauge me-2"></i> Dashboard</a>
-        <a asp-controller="Movies" asp-action="Index"><i class="fa-solid fa-film me-2"></i> Movies</a>
-        <a asp-controller="Admin" asp-action="UsersList"><i class="fa-solid fa-users me-2"></i> Users</a>
-    </div>
 
-    <!-- Main Content -->
-    <div class="d-flex flex-column flex-grow-1">
-        <!-- Topbar -->
-        <div class="topbar">
-            <span class="me-3">Hello, @HttpContextAccessor.HttpContext.Session.GetString("username")</span>
-            <form asp-controller="Auth" asp-action="Logout" method="post" class="m-0">
-                <button type="submit" class="btn btn-outline-danger btn-sm">Logout</button>
-            </form>
-        </div>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <div class="sidebar-header d-flex align-items-center gap-2">
+                <i class="bi bi-film fs-3 text-primary"></i>
+                <div>
+                    <h5 class="mb-0 fw-bold">CineScope</h5>
+                    <small class="text-muted" style="font-size: 0.75rem;">Admin Portal</small>
+                </div>
+            </div>
 
-        <!-- Page Content -->
-        <div class="content">
-            @RenderBody()
+            <ul class="list-unstyled components">
+                <li class="px-4 mb-2">
+                    <small class="text-uppercase text-muted fw-bold" style="font-size: 0.7rem;">Main Menu</small>
+                </li>
+                <li>
+                    <a asp-controller="Admin" asp-action="Dashboard">
+                        <i class="bi bi-speedometer2"></i> Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Movies" asp-action="Index">
+                        <i class="bi bi-collection-play"></i> Movies
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Admin" asp-action="UsersList">
+                        <i class="bi bi-people"></i> Users
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <nav class="topbar">
+                <div>
+                    <h5 class="mb-0 text-dark fw-bold">Overview</h5>
+                </div>
+
+                <div class="dropdown user-dropdown">
+                    <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle gap-2" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="text-end d-none d-sm-block">
+                            <span class="d-block text-dark fw-bold small">@HttpContextAccessor.HttpContext.Session.GetString("username")</span>
+                            <span class="d-block text-muted small" style="font-size: 0.75rem;">Administrator</span>
+                        </div>
+                        <div class="avatar-circle shadow-sm">
+                            @HttpContextAccessor.HttpContext.Session.GetString("username")?.Substring(0, 1).ToUpper()
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end border-0 shadow mt-3" aria-labelledby="userDropdown">
+                        <li><h6 class="dropdown-header">My Account</h6></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <form asp-controller="Auth" asp-action="Logout" method="post">
+                                <button type="submit" class="dropdown-item text-danger">
+                                    <i class="bi bi-box-arrow-right me-2"></i>Logout
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="main-content">
+                @RenderBody()
+            </div>
         </div>
     </div>
 

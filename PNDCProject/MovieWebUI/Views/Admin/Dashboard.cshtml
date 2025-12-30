@@ -3,54 +3,182 @@
     ViewData["Title"] = "Dashboard";
 }
 
-<h2 class="mb-4">Dashboard</h2>
-
-<div class="row g-3">
-    <!-- g-3 adds responsive spacing between cards -->
-    <div class="col-12 col-sm-6 col-md-3">
-        <div class="card text-white bg-primary shadow h-100">
-            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                <h5 class="card-title">Total Users</h5>
-                <p class="card-text fs-4 fw-bold" id="totalUsers">Loading...</p>
-            </div>
+<div class="container-fluid py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="fw-bold text-dark">Dashboard Overview</h2>
+            <p class="text-muted text-small mb-0">Welcome back. Here is your system summary.</p>
+        </div>
+        <div>
+            <button class="btn btn-primary btn-sm shadow-sm" onclick="refreshDashboard(this)">
+                <i class="bi bi-arrow-clockwise me-1" id="refreshIcon"></i> Refresh Data
+            </button>
         </div>
     </div>
 
-    <div class="col-12 col-sm-6 col-md-3">
-        <div class="card text-white bg-success shadow h-100">
-            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                <h5 class="card-title">Total Movies</h5>
-                <p class="card-text fs-4 fw-bold" id="totalMovies">1500</p>
+    <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-xl-4">
+            <div class="card border-0 shadow-sm h-100 stat-card">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <p class="text-uppercase text-muted fw-bold mb-1 small">Total Users</p>
+                            <h3 class="fw-bold text-dark mb-0" id="totalUsers">
+                                <span class="spinner-border spinner-border-sm text-primary" role="status"></span>
+                            </h3>
+                        </div>
+                        <div class="icon-box bg-primary-subtle text-primary rounded-3">
+                            <i class="bi bi-people-fill fs-4"></i>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <span class="text-muted small">Registered members in database</span>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+            <div class="card border-0 shadow-sm h-100 stat-card">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <p class="text-uppercase text-muted fw-bold mb-1 small">Total Movies</p>
+                            <h3 class="fw-bold text-dark mb-0" id="totalMovies">Loading...</h3>
+                        </div>
+                        <div class="icon-box bg-success-subtle text-success rounded-3">
+                            <i class="bi bi-film fs-4"></i>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <span class="text-muted small">Total movies available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .stat-card {
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+        background: #ffffff;
+    }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+        }
+
+    .icon-box {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bg-primary-subtle {
+        background-color: rgba(13, 110, 253, 0.1);
+    }
+
+    .bg-success-subtle {
+        background-color: rgba(25, 135, 84, 0.1);
+    }
+
+    /* Animation for the refresh icon */
+    .spin-animation {
+        animation: spin 1s linear infinite;
+    }
+
+    @@keyframes spin {
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+</style>
 
 <script>
     const authApiBase = "https://localhost:7016/api/Auth/";
     const movieApiBase = "https://localhost:7288/api/Movies/";
-
-    // ✅ Get JWT token from session
     const token = '@Context.Session.GetString("token")';
 
-    // ✅ Fetch total users from AuthService
-    fetch(authApiBase + "users", {
-        headers: {
-            "Authorization": `Bearer ${token}`
-        }
-    })
-    .then(res => {
-        if (!res.ok) throw new Error("Users API Error: " + res.statusText);
-        return res.json();
-    })
-    .then(data => {
-        document.getElementById("totalUsers").innerText = data.length;
-    })
-    .catch(err => {
-        console.error("Users API Error:", err);
-        document.getElementById("totalUsers").innerText = "Error";
-    });
+    // Wrapper function for the Refresh Button
+    async function refreshDashboard(btnElement) {
+        // 1. Add spinning effect to icon
+        const icon = document.getElementById("refreshIcon");
+        icon.classList.add("spin-animation");
 
-  
-    document.getElementById("totalMovies").innerText = "995";
+        // 2. Disable button temporarily
+        btnElement.disabled = true;
+
+        // 3. Reset numbers to show loading state (Visual Feedback)
+        document.getElementById("totalUsers").innerHTML = '<span class="spinner-border spinner-border-sm text-primary"></span>';
+        document.getElementById("totalMovies").innerText = "...";
+
+        // 4. Load Data
+        await loadDashboardData();
+
+        // 5. Remove spinning effect and enable button after small delay
+        setTimeout(() => {
+            icon.classList.remove("spin-animation");
+            btnElement.disabled = false;
+        }, 500);
+    }
+
+    async function loadDashboardData() {
+        try {
+            const response = await fetch(authApiBase + "users", {
+                headers: { "Authorization": `Bearer ${token}` }
+            });
+
+            if (!response.ok) throw new Error("API Error");
+
+            const data = await response.json();
+            const count = Array.isArray(data) ? data.length : 0;
+
+            // Animate User Count
+            animateValue("totalUsers", 0, count, 800);
+
+        } catch (error) {
+            console.error("Error:", error);
+            document.getElementById("totalUsers").innerText = "Err";
+            document.getElementById("totalUsers").classList.add("text-danger");
+        }
+
+        // Animate Movie Count (Hardcoded for now)
+        animateValue("totalMovies", 0, 995, 800);
+    }
+
+    function animateValue(id, start, end, duration) {
+        if (start === end) return;
+        const range = end - start;
+        let current = start;
+        const increment = end > start ? 1 : -1;
+        const stepTime = Math.abs(Math.floor(duration / range));
+        const obj = document.getElementById(id);
+
+        if(range > 200) {
+            obj.innerText = end;
+            return;
+        }
+
+        const timer = setInterval(function() {
+            current += increment;
+            obj.innerText = current;
+            if (current == end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+    }
+
+    // Initial Load
+    loadDashboardData();
 </script>

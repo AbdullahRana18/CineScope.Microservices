@@ -1,27 +1,81 @@
 ﻿@model MovieWebUI.Controllers.UserDto
 @{
     Layout = "_LayoutAdmin";
-    ViewData["Title"] = "Edit User";
+    ViewData["Title"] = "Edit User Role";
 }
 
-<h2>Edit User Role</h2>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            
+            <div class="card border-0 shadow-sm rounded-3">
+                
+                <div class="card-header bg-white p-4 border-bottom-0">
+                    <h4 class="mb-0 fw-bold text-dark">
+                        <i class="bi bi-shield-lock me-2 text-primary"></i>Manage User Access
+                    </h4>
+                    <p class="text-muted small mb-0 mt-1">Update role and permissions for this account.</p>
+                </div>
 
-<form asp-action="EditUser" method="post">
-    <input type="hidden" asp-for="Id" />
-    <div class="mb-3">
-        <label class="form-label">Username</label>
-        <input asp-for="Username" class="form-control" readonly />
+                <div class="card-body p-4">
+                    <form asp-action="EditUser" method="post">
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="mb-4">
+                            <label class="form-label text-uppercase small fw-bold text-muted">Account Details</label>
+                            
+                            <div class="input-group mb-3">
+                                <span class="input-group-text bg-light border-end-0 text-muted">
+                                    <i class="bi bi-person-fill"></i>
+                                </span>
+                                <input asp-for="Username" class="form-control bg-light border-start-0" readonly />
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-text bg-light border-end-0 text-muted">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </span>
+                                <input asp-for="Email" class="form-control bg-light border-start-0" readonly />
+                            </div>
+                            <div class="form-text text-muted small mt-1">
+                                <i class="bi bi-info-circle me-1"></i> Personal details cannot be modified here.
+                            </div>
+                        </div>
+
+                        <hr class="my-4 text-muted opacity-25">
+
+                        <div class="mb-4">
+                            <label asp-for="Role" class="form-label fw-bold">Assign Role</label>
+                            <select asp-for="Role" class="form-select form-select-lg shadow-none border-secondary-subtle">
+                                <option value="User">User (Standard Access)</option>
+                                <option value="Admin">Admin (Full Access)</option>
+                            </select>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a asp-action="UsersIndex" class="btn btn-light text-muted px-4">Cancel</a>
+                            <button type="submit" class="btn btn-primary px-4 shadow-sm">
+                                <i class="bi bi-check-lg me-1"></i> Save Changes
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input asp-for="Email" class="form-control" readonly />
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Role</label>
-        <select asp-for="Role" class="form-select">
-            <option value="User">User</option>
-            <option value="Admin">Admin</option>
-        </select>
-    </div>
-    <button type="submit" class="btn btn-success">Save Changes</button>
-</form>
+</div>
+
+<style>
+    /* Makes readonly inputs look intentional, not just disabled */
+    .form-control[readonly] {
+        background-color: #f8f9fa;
+        cursor: not-allowed;
+        color: #6c757d; 
+    }
+    
+    /* Subtle border fix for input groups */
+    .input-group-text {
+        background-color: #f8f9fa;
+    }
+</style>
