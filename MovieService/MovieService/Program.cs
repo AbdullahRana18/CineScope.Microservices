@@ -31,20 +31,20 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// ✅ Health check
+//  Health check
 builder.Services.AddHealthChecks();
 
-// ✅ OpenTelemetry tracing
+//  OpenTelemetry tracing
 builder.Services.AddOpenTelemetry()
     .WithTracing(t => t
         .AddAspNetCoreInstrumentation()
         .AddHttpClientInstrumentation()
         .AddConsoleExporter());
 
-// ✅ In-memory cache
+//  In-memory cache
 builder.Services.AddMemoryCache();
 
-// ✅ HTTP clients
+//  HTTP clients
 builder.Services.AddHttpClient("tmdb", client =>
 {
     client.BaseAddress = new Uri("https://api.themoviedb.org/3/");
@@ -57,14 +57,14 @@ builder.Services.AddHttpClient("auth", client =>
     client.Timeout = TimeSpan.FromSeconds(5);
 });
 
-// ✅ Register custom services
+//  Register custom services
 builder.Services.AddScoped<IMovieClient, TmdbMovieClient>();
 builder.Services.AddScoped<IMovieService, MovieService.Services.MovieService>();
 
-// ✅ Background worker
+//  Background worker
 builder.Services.AddHostedService<CacheWarmupWorker>();
 
-// ✅ CORS policy for frontend and other services
+//  CORS policy for frontend and other services
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -77,7 +77,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// ✅ Swagger for development
+//  Swagger for development
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -89,22 +89,22 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-// ✅ Logging
+//  Logging
 app.UseSerilogRequestLogging();
 
-// ✅ HTTPS
+//  HTTPS
 app.UseHttpsRedirection();
 
-// ✅ Apply CORS
+// Apply CORS
 app.UseCors("AllowAll");
 
-// ✅ Authorization middleware
+//  Authorization middleware
 app.UseAuthorization();
 
-// ✅ Map controllers
+//  Map controllers
 app.MapControllers();
 
-// ✅ Health endpoint
+//  Health endpoint
 app.MapHealthChecks("/health");
 
 app.Run();
